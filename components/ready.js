@@ -7,7 +7,7 @@ const Ready = ({ t }) => (
   <section className="container-fluid question-wrapper">
     <div className="container">
       <div className="row section-title justify-content-center text-center">
-        <div className="col-md-11 col-lg-10 col-xl-9">
+        <div className="col-md-12 col-lg-10 col-xl-9">
           <h3 className="question aos-init" data-aos="fade-up">
             {t("ready")}
           </h3>

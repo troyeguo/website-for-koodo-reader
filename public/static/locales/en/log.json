@@ -22,5 +22,13 @@
   "new3-1-1-0": "Now you can add multiple epubs simultaneously",
   "fix1-1-1-1": "Make the icon and text of card-mode and list-mode align center",
   "fix2-1-1-1": "Fix the fullscreen issue after pressing Esc button",
-  "fix3-1-1-1": "Fix the render issue of delete icon"
+  "fix3-1-1-1": "Fix the render issue of delete icon",
+  "new1-1-1-2": "Now you can choose the color for highlighter",
+  "new2-1-1-2": "Notes and digests can be redirect to its position in  books",
+  "new3-1-1-2": "Supports for multiple-level contents",
+  "new4-1-1-2": "Now you can preview the image in books",
+  "new5-1-1-2": "notes can be edited and added to digests, notes and digests will both be highlighted in books",
+  "new6-1-1-2": "Support for traditional Chinese",
+  "new7-1-1-2": "Support for translation",
+  "new8-1-1-2": "Books recently added or read will be shown first in All Books"
 }

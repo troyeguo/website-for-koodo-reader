@@ -85,7 +85,7 @@ const Cover = ({ t }) => (
         font-weight:500;
         margin-top: 20px;
       }
-      @media (max-width: 578px) {
+      @media (max-width: 768px) {
         .title {
           margin-top: 100px;
         }
