@@ -3,13 +3,6 @@ import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class CustomDocument extends Document {
-  setGoogleTags() {
-    return {
-      __html: `
-        window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', 'UA-149740367-1') 
-      `,
-    };
-  }
   render() {
     return (
       <Html>
@@ -100,11 +93,6 @@ class CustomDocument extends Document {
           <script src="https://at.alicdn.com/t/font_1803854_8gc5u8bw7eq.js" />
           <link href="/lib/bootstrap-grid.min.css" rel="stylesheet" />
           <link rel="dns-prefetch" href="https://koodo.960960.xyz" />
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-149740367-1"
-          ></script>
-          <script dangerouslySetInnerHTML={this.setGoogleTags()} />
         </Head>
         <body>
           <Main />

@@ -1,5 +1,12 @@
 const changeLogs = [
   {
+    version: "1.1.3",
+    versionTag: "1-1-3",
+    date: "23 August, 2020",
+    fix: 5,
+    new: 3,
+  },
+  {
     version: "1.1.2",
     versionTag: "1-1-2",
     date: "4 August, 2020",
