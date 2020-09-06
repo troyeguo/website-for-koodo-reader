@@ -39,5 +39,13 @@
   "fix5-1-1-3": "Fix the flash issue after import failure",
   "new1-1-1-3": "Now you can add a heart icon to your favorite books",
   "new2-1-1-3": "A bookmark logo will show up after adding",
-  "new3-1-1-3": "UI optimization for book operation"
+  "new3-1-1-3": "UI optimization for book operation",
+  "fix1-1-1-4": "Fix the bug causing image displayed in two pages",
+  "fix2-1-1-4": "Fix the batch-import issue when repeated books included",
+  "new1-1-1-4": "Now you search in the book",
+  "new2-1-1-4": "Desktop version supports cumstomized fonts",
+  "new3-1-1-4": "Single-page mode now supports scroll-reading",
+  "new4-1-1-4": "Support for built-in css of epub",
+  "new5-1-1-4": "Now you can adjust font size to any value",
+  "new6-1-1-4": "UI optimization"
 }
