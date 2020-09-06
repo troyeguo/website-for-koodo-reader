@@ -3,8 +3,8 @@ const changeLogs = [
     version: "1.1.4",
     versionTag: "1-1-4",
     date: "9 September, 2020",
-    fix: 6,
-    new: 2,
+    fix: 2,
+    new: 4,
   },
   {
     version: "1.1.3",
