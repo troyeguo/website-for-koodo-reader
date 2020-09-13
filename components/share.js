@@ -42,7 +42,7 @@ const Share = ({ t }) => {
           </div>
           <div
             className="col-md-9 col-lg-6 col-xl-5 order-lg-1 aos-init "
-            data-aos="fade-right"
+            data-aos="fade-up"
           >
             <img
               src="/images/share.svg"

@@ -30,7 +30,7 @@ const DownloadDemo = ({ t }) => {
             }}
           >
             <div className="download-button row justify-content-center align-items-center col-9 m-4">
-              {item.id === 3 ? t("preview") : t("download")}
+              {item.id === 4 ? t("preview") : t("download")}
             </div>
           </a>
         </div>

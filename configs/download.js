@@ -15,6 +15,12 @@ const downloadOptions = [
   },
   {
     id: 3,
+    icon: "linux",
+    title: "Linux",
+    url: `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}.AppImage`,
+  },
+  {
+    id: 4,
     icon: "web",
     title: "Web",
     url: "https://reader.960960.xyz",
