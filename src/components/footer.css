@@ -1,0 +1,15 @@
+.footer-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  color: rgba(141, 141, 141, 1);
+}
+.footer-copyright {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(172, 174, 179, 1);
+  font-weight: 400;
+}
+.link {
+  color: rgba(141, 141, 141, 1);
+}

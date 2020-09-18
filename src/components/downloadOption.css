@@ -1,0 +1,16 @@
+.download-icon {
+  font-size: calc(1rem + 4vw);
+}
+.download-title {
+  width: 84px;
+  height: 27px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  text-align: center;
+}
+.download-item:hover {
+  box-shadow: 0 0 12px rgba(75, 75, 75, 0.2);
+}
