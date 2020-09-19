@@ -8,10 +8,8 @@
   },
   "scripts": {
     "dev": "node index.js",
-    "build": "next build",
-    "prestart": "next build",
+    "build": "next build && next export",
     "export": "next export",
-    "preexport": "next build",
     "start": "cross-env NODE_ENV=production node index.js",
     "pm2": "pm2 start pm2.json"
   },
