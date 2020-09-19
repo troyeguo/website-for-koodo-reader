@@ -195,9 +195,9 @@ const Header = ({ t, router }) => {
   );
 };
 Header.getInitialProps = async () => ({
-  namespacesRequired: ["header"],
+  namespacesRequired: ["common"],
 });
 Header.propTypes = {
   t: PropTypes.func.isRequired,
 };
-export default withTranslation("header")(withRouter(Header));
+export default withTranslation("common")(withRouter(Header));

@@ -104,7 +104,7 @@ const Support = ({ t }) => {
   );
 };
 Support.getInitialProps = async () => ({
-  namespacesRequired: ["common", "header"],
+  namespacesRequired: ["common"],
 });
 Support.propTypes = {
   t: PropTypes.func.isRequired,

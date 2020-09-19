@@ -157,11 +157,11 @@ const Log = ({ t }) => {
 };
 
 Log.getInitialProps = async () => ({
-  namespacesRequired: ["common", "header"],
+  namespacesRequired: ["common"],
 });
 
 Log.propTypes = {
   t: PropTypes.func.isRequired,
 };
 
-export default withTranslation("log")(Log);
+export default withTranslation("common")(Log);

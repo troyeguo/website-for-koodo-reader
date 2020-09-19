@@ -45,7 +45,7 @@ const Homepage = ({ t }) => (
 );
 
 Homepage.getInitialProps = async () => ({
-  namespacesRequired: ["common", "header"],
+  namespacesRequired: ["common"],
 });
 
 Homepage.propTypes = {

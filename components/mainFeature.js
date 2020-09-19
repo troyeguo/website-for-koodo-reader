@@ -106,10 +106,10 @@ const MainFeature = ({ t }) => {
   );
 };
 MainFeature.getInitialProps = async () => ({
-  namespacesRequired: ["mainFeature"],
+  namespacesRequired: ["common"],
 });
 MainFeature.propTypes = {
   t: PropTypes.func.isRequired,
 };
 
-export default withTranslation("mainFeature")(MainFeature);
+export default withTranslation("common")(MainFeature);

@@ -100,10 +100,10 @@ const FAQ = ({ t }) => {
   );
 };
 FAQ.getInitialProps = async () => ({
-  namespacesRequired: ["common", "header", "faq"],
+  namespacesRequired: ["common"],
 });
 FAQ.propTypes = {
   t: PropTypes.func.isRequired,
 };
 
-export default withTranslation("faq")(FAQ);
+export default withTranslation("common")(FAQ);

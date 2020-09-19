@@ -70,10 +70,10 @@ const MoreFeature = ({ t }) => {
   );
 };
 MoreFeature.getInitialProps = async () => ({
-  namespacesRequired: ["moreFeature"],
+  namespacesRequired: ["common"],
 });
 MoreFeature.propTypes = {
   t: PropTypes.func.isRequired,
 };
 
-export default withTranslation("moreFeature")(MoreFeature);
+export default withTranslation("common")(MoreFeature);

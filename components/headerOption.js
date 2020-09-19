@@ -68,9 +68,9 @@ const HeaderOption = ({ t, router, theme }) => {
   );
 };
 HeaderOption.getInitialProps = async () => ({
-  namespacesRequired: ["header"],
+  namespacesRequired: ["common"],
 });
 HeaderOption.propTypes = {
   t: PropTypes.func.isRequired,
 };
-export default withTranslation("header")(withRouter(HeaderOption));
+export default withTranslation("common")(withRouter(HeaderOption));
