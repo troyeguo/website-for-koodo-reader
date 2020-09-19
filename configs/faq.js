@@ -15,7 +15,7 @@ export const aboutInfo = [
     color2: "#FFD547",
     question: "Koodo Reader 对系统有什么要求？",
     answer:
-      "对于 Mac, Koodo Reader 要求 macOS 10.10 及以上系统. 对于 Windows, 要求 Windows 7 及以上系统",
+      "对于 Mac，Koodo Reader 要求 macOS 10.10 及以上系统。对于 Windows， 要求 Windows 7 及以上系统",
   },
   {
     id: 3,
