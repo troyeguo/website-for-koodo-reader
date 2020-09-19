@@ -53,8 +53,7 @@ const Support = ({ t }) => {
                 <div className="col-10">
                   <div className="feedback-title">{t("邮箱")}</div>
                   <div className="feedback-subtitle">
-                    {t("您也可以直接通过邮箱")}
-                    {" guo362429@gmail.com "}
+                    {t("您也可以直接通过邮箱")}&nbsp; guo362429@gmail.com &nbsp;
                     {t("与开发者取得联系。")}
                   </div>
                 </div>
