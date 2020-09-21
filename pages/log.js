@@ -68,8 +68,10 @@ const Log = ({ t }) => {
       <div className="container bg-dynamic mb-4">
         <div className="row section-title justify-content-center text-center ">
           <div className="col-md-9 col-lg-8 col-xl-7">
-            <h1 className="page-title">{t("log-title")}</h1>
-            <p className="page-subtitle">{t("log-subtitle")}</p>
+            <h1 className="page-title">{t("更新日志")}</h1>
+            <p className="page-subtitle">
+              {t("每个版本 Koodo Reader 的更新日志")}
+            </p>
           </div>
         </div>
         {renderLogs()}
