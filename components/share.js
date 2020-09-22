@@ -22,7 +22,7 @@ const Share = ({ t }) => {
               <use href={`#icon-${item.icon}`}></use>
             </svg>
 
-            {t(item.icon)}
+            {t(item.name)}
           </div>
         </a>
       );
