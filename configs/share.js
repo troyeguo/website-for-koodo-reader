@@ -4,7 +4,7 @@ export const shareOptions = [
     icon: "twitter",
     name: "推特",
     url:
-      "https://twitter.com/intent/tweet?text=Koodo+Reader+-+Free+Epub+Reader+for+Windows%2C+Mac+and+Web+&url=https%3A%2F%2Fkoodo.960960.xyz",
+      "https://twitter.com/intent/tweet?text=Koodo+Reader+-+Free+eBook+Reader+for+Windows%2C+Mac+and+Web+&url=https%3A%2F%2Fkoodo.960960.xyz",
     color: "rgba(29, 162, 242, 1)",
   },
   {

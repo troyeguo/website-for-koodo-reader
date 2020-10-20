@@ -6,7 +6,7 @@ export const aboutInfo = [
     color2: "#3282FA",
     question: "Koodo Reader 是什么？",
     answer:
-      "Koodo Reader 是一个免费开源的 Epub 阅读器，诞生于2020年春，因为当时正在爆发新冠病毒，停工停学，开发者才有时间开发这个软件",
+      "Koodo Reader 是一个免费开源的电子书阅读器，诞生于2020年春，因为当时正在爆发新冠病毒，停工停学，开发者才有时间开发这个软件",
   },
   {
     id: 2,

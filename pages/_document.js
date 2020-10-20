@@ -7,30 +7,33 @@ class CustomDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="keywords" content="epub reader free koodo" />
+          <meta
+            name="keywords"
+            content="ebook epub pdf mobi txt reader free koodo"
+          />
           <meta name="application-name" content="Koodo Reader" />
           <meta
             name="description"
-            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+            content="Koodo Reader is a open-source eBook reader with backup and restore support, runs on Windows, Mac, Linux and Web"
           />
           <meta name="referrer" content="unsafe-url" />
           <meta
             itemProp="name"
-            content="Koodo Reader - Free Epub Reader for Windows, Mac, Linux and Web"
+            content="Koodo Reader - Free EBook Reader for Windows, Mac, Linux and Web"
           />
           <meta
             itemProp="description"
-            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+            content="Koodo Reader is a open-source eBook reader with backup and restore support, runs on Windows, Mac, Linux and Web"
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://koodo.960960.xyz" />
           <meta
             property="og:title"
-            content="Koodo Reader - Free Epub Reader for Windows, Mac, Linux and Web"
+            content="Koodo Reader - Free EBook Reader for Windows, Mac, Linux and Web"
           />
           <meta
             property="og:description"
-            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+            content="Koodo Reader is a open-source EBook reader with backup and restore support, runs on Windows, Mac, Linux and Web"
           />
           <meta
             property="og:image"
@@ -40,11 +43,11 @@ class CustomDocument extends Document {
           <meta property="twitter:url" content="https://koodo.960960.xyz" />
           <meta
             property="twitter:title"
-            content="Koodo Reader - Free Epub Reader for Windows, Mac, Linux and Web"
+            content="Koodo Reader - Free EBook Reader for Windows, Mac, Linux and Web"
           />
           <meta
             property="twitter:description"
-            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+            content="Koodo Reader is a open-source EBook reader with backup and restore support, runs on Windows, Mac, Linux and Web"
           />
           <meta
             property="twitter:image"
