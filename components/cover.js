@@ -18,7 +18,7 @@ const Cover = ({ t }) => (
             <h1 className="title">{t("开启全新阅读体验")}</h1>
             <p className="subtitle">
               {t(
-                "Koodo Reader 是一个免费开源的电子书阅读器，平台支持Windows，macOS，Linux 和网页版，格式支持 epub，pdf，mobi 和 txt，同时还支持数据导入导出和网盘同步。"
+                "Koodo Reader 是一个免费开源的电子书阅读器，平台支持Windows，macOS，Linux 和网页版，格式支持 epub，pdf，mobi 和 txt。"
               )}
             </p>
             <div
