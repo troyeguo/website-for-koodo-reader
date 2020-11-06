@@ -16,18 +16,36 @@ export const moreFeature = [
     id: 4,
     icon: "zu12",
     title: "书签功能",
-    subtitle: "使用书签标记你的阅读进度，快速定位到之前的位置",
+    subtitle: "使用书签快速定位到之前的位置",
   },
   {
     id: 5,
     icon: "zu14",
     title: "永久免费",
-    subtitle: "Koodo Reader 将永久免费，并不断添加更多功能",
+    subtitle: "阅读器将永久免费并不断添加更多功能",
   },
   {
     id: 6,
     icon: "zu13",
     title: "听书功能",
     subtitle: "使用听书功能来解放双手，自动翻页阅读",
+  },
+  {
+    id: 7,
+    icon: "note",
+    title: "笔记功能",
+    subtitle: "简单易用，让你在学习时效率倍增",
+  },
+  {
+    id: 8,
+    icon: "touch",
+    title: "触控屏支持",
+    subtitle: "完美支持触控的的各种手势操作",
+  },
+  {
+    id: 9,
+    icon: "tag",
+    title: "标签功能",
+    subtitle: "给笔记和书摘添加标签，方便学习思路",
   },
 ];

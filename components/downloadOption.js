@@ -31,6 +31,11 @@ const DownloadDemo = ({ t }) => {
           >
             <div className="download-button row justify-content-center align-items-center col-9 m-4">
               {item.id === 4 ? t("网页版") : t("下载")}
+              {item.id === 4 ? (
+                <svg className="icon ml-2" aria-hidden="true">
+                  <use href="#icon-qianjin"></use>
+                </svg>
+              ) : null}
             </div>
           </a>
         </div>

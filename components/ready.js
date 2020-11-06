@@ -6,6 +6,9 @@ import { withTranslation, Link } from "../i18n";
 const Ready = ({ t }) => (
   <section className="container-fluid question-wrapper">
     <div className="container">
+      <div className="ready-img-container">
+        <img src="/images/ready.png" alt="" className="ready-img" />
+      </div>
       <div className="row section-title justify-content-center text-center">
         <div className="col-md-12 col-lg-10 col-xl-9">
           <h3 className="question aos-init" data-aos="fade-up">
@@ -33,7 +36,12 @@ const Ready = ({ t }) => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div>{t("网页版")}</div>
+                <div>
+                  {t("网页版")}
+                  <svg className="icon ml-2" aria-hidden="true">
+                    <use href="#icon-qianjin"></use>
+                  </svg>
+                </div>
               </a>
             </div>
           </div>
@@ -45,7 +53,8 @@ const Ready = ({ t }) => (
         height: 424px;
         background: rgba(255, 226, 183, 1);
         opacity: 1;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
+        position: relative;
       }
       .question {
         font-size: calc(1rem + 2vw);
@@ -54,7 +63,7 @@ const Ready = ({ t }) => (
         color: rgba(0, 0, 0, 1);
         opacity: 0.83;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 40px;
       }
       .ads {
         font-size: 20px;
@@ -76,6 +85,10 @@ const Ready = ({ t }) => (
         color: white;
         opacity: 1;
       }
+      .ready-button {
+        width: 200px;
+        margin-left: calc(50% - 110px);
+      }
       .preview-button {
         width: 175px;
         height: 46px;
@@ -88,15 +101,18 @@ const Ready = ({ t }) => (
         color: rgba(0, 0, 0, 1);
         opacity: 1;
       }
+      .ready-img-container {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+      }
+      .ready-img {
+        width: 100%;
+      }
       @media (max-width: 992px) {
         .ads {
           font-size: 17px;
-        }
-      }
-      @media (max-width: 578px) {
-        .ready-button {
-          display: flex;
-          justify-content: center;
         }
       }
     `}</style>

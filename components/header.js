@@ -58,6 +58,9 @@ const Header = ({ t, router }) => {
                   <svg className="icon icon-black" aria-hidden="true">
                     <use href="#icon-zu49"></use>
                   </svg>
+                  <span className="header-name" style={{ color: "white" }}>
+                    Koodo Reader
+                  </span>
                 </a>
               ) : (
                 <a>
@@ -92,7 +95,10 @@ const Header = ({ t, router }) => {
                 <use href="#icon-more"></use>
               </svg>
 
-              <div className={"row ml-3"}>
+              <div
+                className={"row ml-3"}
+                style={{ position: "relative", bottom: 5 }}
+              >
                 {theme === "dark" && routeName === "/" ? null : (
                   <li className="col-auto">
                     <Link href="/download">
@@ -122,16 +128,15 @@ const Header = ({ t, router }) => {
           position: fixed;
           top: 0;
           z-index: 10;
-          height: 93px;
+          height: 83px;
         }
         .header-name {
           display: inline-block;
           font-size: 1.3rem;
           position: relative;
-          bottom: 15px;
+          bottom: 20px;
           left: 10px;
           font-weight: 600;
-          opacity: 0.8;
         }
         .icon-more {
           font-size: 0;
@@ -139,7 +144,8 @@ const Header = ({ t, router }) => {
           margin-top: 20px;
         }
         .icon-black {
-          font-size: 70px;
+          font-size: 50px;
+          margin: 10px;
         }
         .froze {
           color: white;
@@ -187,7 +193,7 @@ const Header = ({ t, router }) => {
             border-radius: 10px;
             box-shadow: 0 0 8px rgba(75, 75, 75, 0.2);
             position: relative;
-            top: 10px;
+            top: 5px;
           }
         }
       `}</style>

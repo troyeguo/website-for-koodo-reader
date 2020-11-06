@@ -58,10 +58,6 @@ class CustomDocument extends Document {
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
           />
           <link
-            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
-            rel="stylesheet"
-          ></link>
-          <link
             rel="apple-touch-icon"
             sizes="180x180"
             href="/icons/apple-touch-icon.png"
@@ -93,7 +89,7 @@ class CustomDocument extends Document {
           <meta name="theme-color" content="#ffffff" />
           <link href="/lib/aos.css" rel="stylesheet" />{" "}
           <script src="/lib/aos.js"></script>
-          <script src="https://at.alicdn.com/t/font_1803854_8gc5u8bw7eq.js" />
+          <script src="https://at.alicdn.com/t/font_1803854_2g1n9whbihj.js" />
           <link href="/lib/bootstrap-grid.min.css" rel="stylesheet" />
           <link rel="dns-prefetch" href="https://koodo.960960.xyz" />
         </Head>

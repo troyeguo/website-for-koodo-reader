@@ -1,0 +1,20 @@
+export const mainFeature = [
+  {
+    id: 1,
+    title: "多格式支持",
+    subtitle: "Koodo Reader 支持阅读 epub、pdf、mobi、txt 格式的电子书",
+    icons: ["epub", "pdf", "mobi", "txt"],
+  },
+  {
+    id: 2,
+    title: "全平台覆盖",
+    subtitle: "Koodo Reader 支持 Windows、macOS、Linux 和 网页版",
+    icons: ["windows", "mac", "linux", "web"],
+  },
+  {
+    id: 3,
+    title: "云端同步",
+    subtitle: "使用您喜欢的网盘同步您的数据或保存到本地存储",
+    icons: ["dropbox", "google", "onedrive", "webdav"],
+  },
+];

@@ -9,9 +9,16 @@ const HeaderOption = ({ t, router, theme }) => {
     <div>
       <div className="row ">
         <li className="col-lg-auto mt-2">
+          <Link href="/">
+            <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
+              {t("首页")}
+            </a>
+          </Link>
+        </li>
+        <li className="col-lg-auto mt-2">
           <Link href="/faq">
             <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
-              {t("帮助")}
+              {t("常见问题")}
             </a>
           </Link>
         </li>

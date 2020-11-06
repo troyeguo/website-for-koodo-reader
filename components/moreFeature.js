@@ -28,7 +28,26 @@ const MoreFeature = ({ t }) => {
     <section className="container my-lg-5">
       <div className="more-question">{t("更多")}</div>
       <div className="row text-center">{renderFeature()}</div>
-
+      <div className="row justify-content-center">
+        <div
+          className={
+            "download-button row justify-content-center align-items-center"
+          }
+        >
+          <div>
+            <a
+              href="https://github.com/troyeguo/koodo-reader#特色-"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("了解更多")}
+              <svg className="icon ml-2" aria-hidden="true">
+                <use href="#icon-qianjin"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
       <style global jsx>{`
         .more-icon {
           font-size: calc(2.2rem + 2vw);

@@ -3,30 +3,23 @@ import PropTypes from "prop-types";
 
 import { withTranslation, Link } from "../i18n";
 const Cover = ({ t }) => (
-  <div className="container-fluid  cover-bg">
-    <img src="/images/cover.jpg" alt="Koodo Reader Cover" className="cover" />
-    <section className="bg-dark pb-0">
+  <div className="container-fluid cover-bg">
+    <img src="/images/cover.svg" alt="Koodo Reader Cover" className="cover" />
+    <section className="bg-dark mt-5">
       <div className="container" style={{ height: "100%" }}>
         <div
-          className="row justify-content-between align-items-center"
+          className="row justify-content-center align-items-center"
           style={{ height: "100%" }}
         >
-          <div
-            className="col-xl-6 col-lg-7 text-center text-lg-left mb-4 mb-md-5 mb-lg-0 aos-init"
-            data-aos="fade-right"
-          >
-            <h1 className="title">{t("开启全新阅读体验")}</h1>
-            <p className="subtitle">
+          <div className="col-10  mt-6 mb-md-5 mb-lg-0">
+            <p className="title text-center">{t("开启全新阅读体验")}</p>
+            <p className="subtitle text-center">
               {t(
-                "Koodo Reader 是一个免费开源的电子书阅读器，平台支持Windows，macOS，Linux 和网页版，格式支持 epub，pdf，mobi 和 txt。"
+                "Koodo Reader 是一个免费开源的电子书阅读器，支持 epub，pdf，mobi 和 txt"
               )}
             </p>
-            <div
-              className="container aos-init cover-button"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div className="row justify-content-md-start mt-4 cover-button">
+            <div className="container cover-button">
+              <div className="row justify-content-md-center mt-4 cover-button">
                 <Link href="/download">
                   <div className="row download-button m-2  justify-content-center align-items-center">
                     <div>{t("下载")}</div>
@@ -40,6 +33,9 @@ const Cover = ({ t }) => (
                     rel="noopener noreferrer"
                   >
                     {t("网页版")}
+                    <svg className="icon ml-2" aria-hidden="true">
+                      <use href="#icon-qianjin"></use>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -63,15 +59,16 @@ const Cover = ({ t }) => (
     </section>
     <style jsx>{`
       .cover-bg {
-        background-color: black;
+        background-color: rgba(4, 10, 32, 1);
         color: white;
-        height: 600px;
+        width: 100%;
+        margin-bottom:100px
       }
       .cover {
-        height: 600px;
         position: absolute;
-        top: 0px;
-        right: 0px;
+        top:0;
+        left: 0;
+        width:100%
       }
       .title {
         font-size: calc(1rem + 2.5vw);
@@ -79,7 +76,8 @@ const Cover = ({ t }) => (
         line-height: 1.2;
         color: rgba(255, 255, 255, 1);
         opacity: 1;
-        margin-top: 60px;
+        margin-top: 320px;
+        text-align:center
       }
       .subtitle {
         font-size: 1.25rem;
@@ -87,7 +85,8 @@ const Cover = ({ t }) => (
         color: rgba(190, 190, 190, 1);
         opacity: 1;
         font-weight:500;
-        margin-top: 20px;
+        margin-top: 10px;
+        text-align:center
       }
       @media (max-width: 768px) {
         .title {
