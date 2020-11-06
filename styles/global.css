@@ -47,6 +47,8 @@
   line-height: 1.25;
   color: rgba(0, 0, 0, 1);
   opacity: 1;
+  position: relative;
+  top: 12px;
 }
 .lead {
   font-size: 1.1rem;
@@ -102,4 +104,11 @@
 .auth-page-close-icon {
   font-size: 60px !important;
   float: none !important;
+}
+.title-decor {
+  width: 180px;
+  height: 12px;
+  background: #ffe2b7;
+  opacity: 1;
+  z-index: -1;
 }

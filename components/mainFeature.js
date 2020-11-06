@@ -1,18 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { mainFeature } from "../configs/mainFeature";
-import { withTranslation } from "../i18n";
+import { i18n, withTranslation } from "../i18n";
 
 const MainFeature = ({ t }) => {
   const renderFeature = () => {
     return mainFeature.map((item) => {
       return (
-        <div>
+        <div key={item.id}>
           <div className="container my-5">
             <div className="row align-items-center justify-content-around">
               <div className="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2 pl-lg-5 pl-xl-0">
                 <h2 className="h1">{t(item.title)}</h2>
+                <div
+                  className="title-decor"
+                  style={i18n.language === "en" ? { width: item.width } : {}}
+                ></div>
                 <p className="lead">{t(item.subtitle)}</p>
+
                 <div className="mt-3 justify-content-between align-items-center">
                   {item.icons.map((subitem) => {
                     return (
