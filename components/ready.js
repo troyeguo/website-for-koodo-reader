@@ -83,10 +83,12 @@ const Ready = ({ t }) => (
         line-height: 24px;
         color: white;
         opacity: 1;
+        z-index: 10;
       }
       .ready-button {
         width: 200px;
         margin-left: calc(50% - 110px);
+        z-index: 10;
       }
       .preview-button {
         width: 175px;
@@ -99,6 +101,7 @@ const Ready = ({ t }) => (
         line-height: 24px;
         color: rgba(0, 0, 0, 1);
         opacity: 1;
+        z-index: 10;
       }
       .ready-img-container {
         position: absolute;
