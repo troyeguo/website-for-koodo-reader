@@ -3,9 +3,11 @@ import PropTypes from "prop-types";
 
 import { withTranslation, Link } from "../i18n";
 const Cover = ({ t }) => (
-  <div className="container-fluid cover-bg">
-    <img src="/images/cover.svg" alt="Koodo Reader Cover" className="cover" />
-    <section className="bg-dark mt-5">
+  <div className="container-fluid cover-container" style={{ padding: 0 }}>
+    <div className="cover-bg">
+      <img src="/images/cover.svg" alt="Koodo Reader Cover" className="cover" />
+    </div>
+    <section className="bg-dark">
       <div className="container" style={{ height: "100%" }}>
         <div
           className="row justify-content-center align-items-center"
@@ -58,8 +60,7 @@ const Cover = ({ t }) => (
       <div className="divider divider-bottom bg-white dark-theme"></div>
     </section>
     <style jsx>{`
-      .cover-bg {
-        background-color: rgba(4, 10, 32, 1);
+      .cover-container {
         color: white;
         width: 100%;
         margin-bottom:100px
@@ -76,7 +77,7 @@ const Cover = ({ t }) => (
         line-height: 1.2;
         color: rgba(255, 255, 255, 1);
         opacity: 1;
-        margin-top: 320px;
+        margin-top: calc(27vw);
         text-align:center
       }
       .subtitle {
@@ -88,25 +89,26 @@ const Cover = ({ t }) => (
         margin-top: 10px;
         text-align:center
       }
+      @media (max-width: 918px) {
+        .title {
+          margin-top: calc(20vw);
+        }
+      }
       @media (max-width: 768px) {
         .title {
-          margin-top: 100px;
+          margin-top: 0px;
         }
         .subtitle {
           font-size: 1rem;
           line-height: 1.5;
         }
-        .cover-bg {
-          height: 120vw;
-
+        .cover-container {
+          height: 80vh;
+          width:100%;
+          background:url('/images/cover.svg')
         }
         .cover {
-          height: 120vw;
-          -webkit-filter:blur(5px);
-          -moz-filter:blur(5px);
-          -o-filter:blur(5px);
-          -ms-filter:blur(5px);
-          filter:blur(5px);
+          display:none
         }
         .cover-button {
           display:flex;

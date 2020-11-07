@@ -58,27 +58,6 @@
   opacity: 0.55;
   margin-top: 15px;
 }
-@media (max-width: 992px) {
-  .download-button {
-    /* display: none; */
-  }
-  .preview-button {
-    /* display: none; */
-  }
-  .h1,
-  .lead {
-    text-align: center;
-  }
-  .lead {
-    font-size: 0.8rem;
-  }
-  .divider {
-    height: 0px;
-  }
-  .feature-image {
-    padding: 0px 10px;
-  }
-}
 .share-button {
   width: 116px;
   height: 48px;
@@ -111,4 +90,40 @@
   background: #ffe2b7;
   opacity: 1;
   z-index: -1;
+}
+.icon-feature {
+  font-size: 55px;
+  margin-right: 20px;
+}
+
+@media (max-width: 992px) {
+  .download-button {
+    /* display: none; */
+  }
+  .preview-button {
+    /* display: none; */
+  }
+  .h1,
+  .lead {
+    text-align: left;
+  }
+  .lead {
+    font-size: 0.8rem;
+  }
+  .divider {
+    height: 0px;
+  }
+  .feature-image {
+    padding: 0px 10px;
+  }
+  .icon-feature {
+    font-size: 45px;
+    margin-right: 7px;
+  }
+}
+@media (max-width: 678px) {
+  .icon-feature {
+    font-size: 35px;
+    margin-right: 7px;
+  }
 }

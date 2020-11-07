@@ -53,7 +53,6 @@ const Ready = ({ t }) => (
         height: 424px;
         background: rgba(255, 226, 183, 1);
         opacity: 1;
-        margin-bottom: 50px;
         position: relative;
       }
       .question {

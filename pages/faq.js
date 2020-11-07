@@ -41,7 +41,7 @@ const FAQ = ({ t }) => {
         <div className="container mt-4">
           <div className="row section-title justify-content-center text-center">
             <div className="col-md-9 col-lg-8 col-xl-7">
-              <h1 className="page-title">{t("帮助")}</h1>
+              <h1 className="page-title">{t("常见问题")}</h1>
               <p className="page-subtitle">
                 {t("关于 Koodo Reader 您可能关心的东西")}
               </p>

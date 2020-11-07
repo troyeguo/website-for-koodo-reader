@@ -8,9 +8,9 @@ const MainFeature = ({ t }) => {
     return mainFeature.map((item) => {
       return (
         <div key={item.id}>
-          <div className="container my-5">
+          <div className="container my-3">
             <div className="row align-items-center justify-content-around">
-              <div className="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2 pl-lg-5 pl-xl-0">
+              <div className="ml-4 col-md-5 col-xl-5 order-lg-2">
                 <h2 className="h1">{t(item.title)}</h2>
                 <div
                   className="title-decor"
@@ -19,12 +19,12 @@ const MainFeature = ({ t }) => {
                 <p className="lead">{t(item.subtitle)}</p>
 
                 <div className="mt-3 justify-content-between align-items-center">
-                  {item.icons.map((subitem) => {
+                  {item.icons.map((subitem, index) => {
                     return (
                       <svg
-                        className="icon"
+                        className="icon icon-feature"
                         aria-hidden="true"
-                        style={{ fontSize: "55px", marginRight: "20px" }}
+                        key={index}
                       >
                         <use href={`#icon-${subitem}`}></use>
                       </svg>
@@ -33,14 +33,14 @@ const MainFeature = ({ t }) => {
                 </div>
               </div>
               <div
-                className={`col-md-9 col-lg-6 col-xl-5 order-lg-${
+                className={`col-6 col-md-4 order-lg-${
                   item.id % 2 ? 1 : 3
-                } feature-image`}
+                } feature-image mt-5 justify-content-center align-item-center`}
               >
                 <img
                   src={`/images/image${item.id}.svg`}
                   alt={item.title}
-                  style={{ width: "80%" }}
+                  style={{ width: "100%" }}
                 />
               </div>
             </div>

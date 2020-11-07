@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 import { withTranslation, Link } from "../i18n";
 
 const Footer = ({ t }) => (
-  <section className="row justify-content-around footer-text m-0">
-    <div className="col-4 align-items-baseline">
+  <section className="row justify-content-around footer-text m-0 pt-4">
+    <div className="col-12 col-md-4 align-items-baseline">
       <a>
         <svg className="icon icon-black" aria-hidden="true">
           <use href="#icon-zu48"></use>
@@ -23,14 +23,7 @@ const Footer = ({ t }) => (
     </div>
     <div className="col-auto align-items-baseline">
       <div>
-        <a
-          className="link-id"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("产品信息")}
-        </a>
+        <a className="link-id">{t("产品信息")}</a>
       </div>
       <Link href="/privacy">
         <div>
@@ -51,14 +44,7 @@ const Footer = ({ t }) => (
 
     <div className="col-auto align-items-baseline">
       <div>
-        <a
-          className="link-id"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("用户条款")}
-        </a>
+        <a className="link-id">{t("用户条款")}</a>
       </div>
       <Link href="/privacy">
         <div>
@@ -70,7 +56,7 @@ const Footer = ({ t }) => (
           <a className="link">{t("服务条款")}</a>
         </div>
       </Link>
-      <Link href="/terms">
+      <Link href="/support">
         <div>
           <a className="link">{t("客户支持")}</a>
         </div>
@@ -79,19 +65,12 @@ const Footer = ({ t }) => (
 
     <div className="col-auto align-items-baseline">
       <div>
-        <a
-          className="link-id"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("资源下载")}
-        </a>
+        <a className="link-id">{t("资源下载")}</a>
       </div>
       <div>
         <a
           className="link"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
+          href="https://sci-hub.se/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -101,7 +80,7 @@ const Footer = ({ t }) => (
       <div>
         <a
           className="link"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
+          href="https://booksc.org/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -111,7 +90,7 @@ const Footer = ({ t }) => (
       <div>
         <a
           className="link"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
+          href="https://libgen.is/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -121,7 +100,7 @@ const Footer = ({ t }) => (
       <div>
         <a
           className="link"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
+          href="http://www.gutenberg.org/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -131,19 +110,12 @@ const Footer = ({ t }) => (
     </div>
     <div className="col-auto align-items-baseline">
       <div>
-        <a
-          className="link-id"
-          href="https:/id/github.com/troyeguo/koodo-reader#特色-"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("同类产品")}
-        </a>
+        <a className="link-id">{t("同类产品")}</a>
       </div>
       <div>
         <a
           className="link"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
+          href="https://www.neat-reader.cn/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -153,7 +125,7 @@ const Footer = ({ t }) => (
       <div>
         <a
           className="link"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
+          href="http://www.bookxnote.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -163,7 +135,7 @@ const Footer = ({ t }) => (
       <div>
         <a
           className="link"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
+          href="https://calibre-ebook.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -173,7 +145,7 @@ const Footer = ({ t }) => (
       <div>
         <a
           className="link"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
+          href="https://www.sumatrapdfreader.org/free-pdf-reader.html"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -183,19 +155,12 @@ const Footer = ({ t }) => (
     </div>
     <div className="col-auto align-items-baseline">
       <div>
-        <a
-          className="link-id"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("开发者信息")}
-        </a>
+        <a className="link-id">{t("开发者信息")}</a>
       </div>
       <div>
         <a
           className="link"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
+          href="https://960960.xyz/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -205,7 +170,7 @@ const Footer = ({ t }) => (
       <div>
         <a
           className="link"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
+          href="https://github.com/troyeguo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -215,7 +180,7 @@ const Footer = ({ t }) => (
       <div>
         <a
           className="link"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
+          href="https://dribbble.com/troyeguo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -225,7 +190,7 @@ const Footer = ({ t }) => (
       <div>
         <a
           className="link"
-          href="https://github.com/troyeguo/koodo-reader#特色-"
+          href="https://www.linkedin.com/in/troyeguo/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -259,16 +224,19 @@ const Footer = ({ t }) => (
         font-weight: 500;
         line-height: 25px;
         color: rgba(141, 141, 141, 1);
-        height: 280px;
+        min-height: 280px;
+        background-color: rgba(247, 249, 252, 0.8);
       }
       .footer-copyright {
         font-size: 16px;
-        line-height: 19px;
+        line-height: 30px;
         color: rgba(172, 174, 179, 1);
         font-weight: 400;
+        margin-bottom: 30px;
       }
       .link {
         color: rgba(141, 141, 141, 1);
+        cursor: pointer;
       }
       .link-id {
         color: black;

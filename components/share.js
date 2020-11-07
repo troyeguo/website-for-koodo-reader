@@ -42,10 +42,7 @@ const Share = ({ t }) => {
               {renderShare()}
             </div>
           </div>
-          <div
-            className="col-md-9 col-lg-6 col-xl-5 order-lg-1 aos-init "
-            data-aos="fade-up"
-          >
+          <div className="col-md-9 col-lg-6 col-xl-5 order-lg-1">
             <img
               src="/images/share.svg"
               alt="Share with the world"

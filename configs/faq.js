@@ -4,7 +4,7 @@ export const aboutInfo = [
     icon: "zu54",
     color1: "#1D2FFD",
     color2: "#3282FA",
-    question: "Koodo Reader 是什么？",
+    question: "Koodo Reader 是怎么诞生的？",
     answer:
       "Koodo Reader 诞生于2020年春，因为新冠病毒的爆发，学校停课，开发者在家用了一个月的时间完成了整个软件从设计，开发到上线的全部流程。",
   },
@@ -13,9 +13,9 @@ export const aboutInfo = [
     icon: "zu56",
     color1: "#FE7326",
     color2: "#FFD547",
-    question: "Koodo Reader 对系统有什么要求？",
+    question: "下载速度太慢怎么办？",
     answer:
-      "对于 Mac，Koodo Reader 要求及以上系统，对于 Windows，要求 Windows 7 及以上系统",
+      "软件安装包托管在GitHub上，国内部分地区会出现下载速度不稳定的情况，这时请复制下载链接到 d.serctl.com ，重新下载",
   },
   {
     id: 3,

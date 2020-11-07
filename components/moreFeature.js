@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { moreFeature } from "../configs/moreFeature";
-import { withTranslation } from "../i18n";
+import { i18n, withTranslation } from "../i18n";
 
 const MoreFeature = ({ t }) => {
   const renderFeature = () => {
     return moreFeature.map((item) => {
       return (
         <div
-          className="col-md-6 col-lg-4 mb-4 mb-md-5 aos-init"
+          className="col-6 col-md-6 col-lg-4 mb-4 mb-md-5 aos-init"
           data-aos="fade-up"
           data-aos-delay={item.id * 50}
           key={item.id}
@@ -31,12 +31,16 @@ const MoreFeature = ({ t }) => {
       <div className="row justify-content-center">
         <div
           className={
-            "download-button row justify-content-center align-items-center"
+            "download-button row justify-content-center align-items-center mb-5"
           }
         >
           <div>
             <a
-              href="https://github.com/troyeguo/koodo-reader#特色-"
+              href={
+                i18n.language !== "en"
+                  ? "https://github.com/troyeguo/koodo-reader#特色-"
+                  : "https://github.com/troyeguo/koodo-reader/blob/master/README_en.md#feature-"
+              }
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -81,7 +85,6 @@ const MoreFeature = ({ t }) => {
             margin: 40px 0px;
           }
           .more-subtitle {
-            padding: 0px 50px;
           }
         }
       `}</style>

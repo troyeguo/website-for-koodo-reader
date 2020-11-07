@@ -89,7 +89,7 @@ class CustomDocument extends Document {
           <meta name="theme-color" content="#ffffff" />
           <link href="/lib/aos.css" rel="stylesheet" />{" "}
           <script src="/lib/aos.js"></script>
-          <script src="https://at.alicdn.com/t/font_1803854_2g1n9whbihj.js" />
+          <script src="https://at.alicdn.com/t/font_1803854_q7xmgrr4cy.js" />
           <link href="/lib/bootstrap-grid.min.css" rel="stylesheet" />
           <link rel="dns-prefetch" href="https://koodo.960960.xyz" />
         </Head>

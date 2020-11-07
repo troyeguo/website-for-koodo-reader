@@ -34,7 +34,7 @@ export const moreFeature = [
     id: 7,
     icon: "note",
     title: "笔记功能",
-    subtitle: "简单易用，让你在学习时效率倍增",
+    subtitle: "使用笔记随时记录所思所想",
   },
   {
     id: 8,
@@ -46,6 +46,6 @@ export const moreFeature = [
     id: 9,
     icon: "tag",
     title: "标签功能",
-    subtitle: "给笔记和书摘添加标签，方便学习思路",
+    subtitle: "给笔记和书摘添加标签，方便归纳整理",
   },
 ];
