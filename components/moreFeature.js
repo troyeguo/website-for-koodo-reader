@@ -31,7 +31,7 @@ const MoreFeature = ({ t }) => {
       <div className="row justify-content-center">
         <div
           className={
-            "download-button row justify-content-center align-items-center mb-5"
+            "download-button row justify-content-center align-items-center mb-4"
           }
         >
           <div>

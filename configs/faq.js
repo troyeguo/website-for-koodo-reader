@@ -14,8 +14,7 @@ export const aboutInfo = [
     color1: "#FE7326",
     color2: "#FFD547",
     question: "下载速度太慢怎么办？",
-    answer:
-      "软件安装包托管在GitHub上，国内部分地区会出现下载速度不稳定的情况，这时请复制下载链接到 d.serctl.com ，重新下载",
+    answer: "软件安装包托管在GitHub上，国内部分地区会出现下载速度不稳定的情况",
   },
   {
     id: 3,

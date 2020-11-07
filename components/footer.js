@@ -21,26 +21,6 @@ const Footer = ({ t }) => (
         </a>
       </div>
     </div>
-    <div className="col-auto align-items-baseline">
-      <div>
-        <a className="link-id">{t("产品信息")}</a>
-      </div>
-      <Link href="/privacy">
-        <div>
-          <a className="link">{t("常见问题")}</a>
-        </div>
-      </Link>
-      <Link href="/terms">
-        <div>
-          <a className="link">{t("更新日志")}</a>
-        </div>
-      </Link>
-      <Link href="/downLoad">
-        <div>
-          <a className="link">{t("下载")}</a>
-        </div>
-      </Link>
-    </div>
 
     <div className="col-auto align-items-baseline">
       <div>

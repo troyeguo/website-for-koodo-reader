@@ -105,7 +105,8 @@ const Cover = ({ t }) => (
         .cover-container {
           height: 80vh;
           width:100%;
-          background:url('/images/cover.svg')
+          background:url('/images/cover.svg');
+          margin-bottom:20px;
         }
         .cover {
           display:none
