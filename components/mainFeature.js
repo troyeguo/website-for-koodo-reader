@@ -25,6 +25,7 @@ const MainFeature = ({ t }) => {
                         className="icon icon-feature"
                         aria-hidden="true"
                         key={index}
+                        style={item.id===3?{fontSize:"45px"}:{}}
                       >
                         <use href={`#icon-${subitem}`}></use>
                       </svg>
