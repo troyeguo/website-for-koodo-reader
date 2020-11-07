@@ -78,7 +78,7 @@ const MoreFeature = ({ t }) => {
           color: rgba(0, 0, 0, 1);
           opacity: 1;
           text-align: center;
-          margin: 20px 0px 80px;
+          margin: 10px 0px 30px;
         }
         @media (max-width: 992px) {
           .more-question {

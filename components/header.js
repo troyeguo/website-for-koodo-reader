@@ -127,7 +127,7 @@ const Header = ({ t, router }) => {
           line-height: 24px;
           position: fixed;
           top: 0;
-          z-index: 10;
+          z-index: 20;
           height: 83px;
         }
         .header-name {
