@@ -5,7 +5,7 @@ import { withTranslation, Link } from "../i18n";
 
 const Footer = ({ t }) => (
   <section className="row justify-content-around footer-text m-0 pt-4">
-    <div className="col-12 col-md-4 align-items-baseline">
+    <div className="col-12 col-md-4 align-items-baseline mb-2">
       <a>
         <svg className="icon icon-black" aria-hidden="true">
           <use href="#icon-zu48"></use>
@@ -16,13 +16,39 @@ const Footer = ({ t }) => (
       <div style={{ position: "relative", bottom: "15px" }}>
         <a className="link">
           {t(
-            "Koodo Reader 是一个免费开源的电子书阅读器，支持 epub，pdf，mobi 和 txt"
+            "Koodo Reader 是一个免费开源的电子书阅读器，支持 epub，pdf，mobi，azw3 和 txt"
           )}
         </a>
       </div>
     </div>
+    <div
+      className="col-12 col-md-auto align-items-baseline  mb-2"
+      style={{ textAlign: "center" }}
+    >
+      <div>
+        <a className="link-id">{t("产品信息")}</a>
+      </div>
+      <Link href="/faq">
+        <div>
+          <a className="link">{t("常见问题")}</a>
+        </div>
+      </Link>
+      <Link href="/log">
+        <div>
+          <a className="link">{t("更新日志")}</a>
+        </div>
+      </Link>
+      <Link href="/download">
+        <div>
+          <a className="link">{t("下载")}</a>
+        </div>
+      </Link>
+    </div>
 
-    <div className="col-auto align-items-baseline">
+    <div
+      className="col-12 col-md-auto align-items-baseline  mb-2"
+      style={{ textAlign: "center" }}
+    >
       <div>
         <a className="link-id">{t("用户条款")}</a>
       </div>
@@ -43,7 +69,10 @@ const Footer = ({ t }) => (
       </Link>
     </div>
 
-    <div className="col-auto align-items-baseline">
+    <div
+      className="col-12 col-md-auto align-items-baseline  mb-2"
+      style={{ textAlign: "center" }}
+    >
       <div>
         <a className="link-id">{t("资源下载")}</a>
       </div>
@@ -88,7 +117,10 @@ const Footer = ({ t }) => (
         </a>
       </div>
     </div>
-    <div className="col-auto align-items-baseline">
+    <div
+      className="col-12 col-md-auto align-items-baseline  mb-2"
+      style={{ textAlign: "center" }}
+    >
       <div>
         <a className="link-id">{t("同类产品")}</a>
       </div>
@@ -133,7 +165,10 @@ const Footer = ({ t }) => (
         </a>
       </div>
     </div>
-    <div className="col-auto align-items-baseline">
+    <div
+      className="col-12 col-md-auto align-items-baseline  mb-2"
+      style={{ textAlign: "center" }}
+    >
       <div>
         <a className="link-id">{t("开发者信息")}</a>
       </div>
@@ -178,7 +213,10 @@ const Footer = ({ t }) => (
         </a>
       </div>
     </div>
-    <div className="col-12 row justify-content-center mt-5 footer-copyright">
+    <div
+      className="col-12 row justify-content-center mt-5 footer-copyright"
+      style={{ textAlign: "center" }}
+    >
       © 2020 App by Troye. All rights reserved.
     </div>
     <div className="divider"></div>

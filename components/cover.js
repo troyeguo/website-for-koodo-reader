@@ -17,7 +17,7 @@ const Cover = ({ t }) => (
             <p className="title text-center">{t("开启全新阅读体验")}</p>
             <p className="subtitle text-center">
               {t(
-                "Koodo Reader 是一个免费开源的电子书阅读器，支持 epub，pdf，mobi 和 txt"
+                "Koodo Reader 是一个免费开源的电子书阅读器，支持 epub，pdf，mobi，azw3 和 txt"
               )}
             </p>
             <div className="container cover-button">
@@ -107,6 +107,7 @@ const Cover = ({ t }) => (
           width:100%;
           background:url('/images/cover.svg');
           margin-bottom:20px;
+          
         }
         .cover {
           display:none

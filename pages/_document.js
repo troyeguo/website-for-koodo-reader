@@ -9,7 +9,7 @@ class CustomDocument extends Document {
         <Head>
           <meta
             name="keywords"
-            content="ebook epub pdf mobi txt reader free koodo"
+            content="ebook epub pdf mobi azw3 txt reader free koodo ebook 免费 阅读器 电子书"
           />
           <meta name="application-name" content="Koodo Reader" />
           <meta

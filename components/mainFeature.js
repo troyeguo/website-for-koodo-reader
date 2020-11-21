@@ -25,7 +25,6 @@ const MainFeature = ({ t }) => {
                         className="icon icon-feature"
                         aria-hidden="true"
                         key={index}
-                        style={item.id===3?{fontSize:"45px"}:{}}
                       >
                         <use href={`#icon-${subitem}`}></use>
                       </svg>
@@ -34,7 +33,7 @@ const MainFeature = ({ t }) => {
                 </div>
               </div>
               <div
-                className={`col-6 col-md-4 order-lg-${
+                className={`col-8 col-md-4 order-lg-${
                   item.id % 2 ? 1 : 3
                 } feature-image mt-5 justify-content-center align-item-center`}
               >

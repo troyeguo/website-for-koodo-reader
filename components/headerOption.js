@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { withRouter } from "next/router";
 import { i18n, Link, withTranslation } from "../i18n";
 
 const HeaderOption = ({ t, router, theme }) => {
   const routeName = router.pathname;
+  useEffect(() => {
+    if (localStorage.getItem("lng")) {
+      i18n.changeLanguage(localStorage.getItem("lng"));
+      return;
+    }
+    if (
+      navigator.language === "zh-CN" ||
+      navigator.language === "zh-SG" ||
+      navigator.language === "zh-TW" ||
+      navigator.language === "zh-HK"
+    ) {
+      i18n.changeLanguage("cn");
+    } else {
+      i18n.changeLanguage("en");
+    }
+  }, []);
   return (
     <div>
       <div className="row ">
@@ -49,9 +65,10 @@ const HeaderOption = ({ t, router, theme }) => {
           </a>
         </li>
         <li
-          onClick={() =>
-            i18n.changeLanguage(i18n.language === "en" ? "cn" : "en")
-          }
+          onClick={() => {
+            i18n.changeLanguage(i18n.language === "en" ? "cn" : "en");
+            localStorage.setItem("lng", i18n.language === "en" ? "cn" : "en");
+          }}
           className="col-lg-auto mt-2 pb-3"
         >
           <a

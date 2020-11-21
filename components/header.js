@@ -38,9 +38,6 @@ const Header = ({ t, router }) => {
     //滚动滑轮触发scrollFunc方法 //ie 谷歌
     window.onmousewheel = document.onmousewheel = scrollFunc;
   }, []);
-  useEffect(() => {
-    console.log(theme);
-  }, [theme]);
   return (
     <div
       className={
@@ -152,9 +149,8 @@ const Header = ({ t, router }) => {
         }
         .scroll {
           color: black;
-          background: rgba(255, 255, 255, 0.5);
-          backdrop-filter: blur(15px);
-          border-bottom: 1px solid rgba(75, 75, 75, 0.2);
+          background: rgba(255, 255, 255, 1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.07);
         }
 
         @media all and (max-width: 992px) {
@@ -179,6 +175,8 @@ const Header = ({ t, router }) => {
           .icon-black {
             font-size: 50px;
             visibility: true;
+            position: relative;
+            bottom: 10px;
           }
           .header-name {
             display: none;

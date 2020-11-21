@@ -3,7 +3,7 @@ export const mainFeature = [
     id: 1,
     title: "多格式支持",
     width: 420,
-    subtitle: "Koodo Reader 支持阅读 epub、pdf、mobi、txt 格式的电子书",
+    subtitle: "Koodo Reader 支持阅读 epub、pdf、mobi、azw3 和 txt 格式的电子书",
     icons: ["epub", "pdf", "mobi", "txt"],
   },
   {
