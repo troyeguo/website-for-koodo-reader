@@ -17,8 +17,10 @@ const HeaderOption = ({ t, router, theme }) => {
       navigator.language === "zh-HK"
     ) {
       i18n.changeLanguage("cn");
+      localStorage.setItem("lng", "cn");
     } else {
       i18n.changeLanguage("en");
+      localStorage.setItem("lng", "en");
     }
   }, []);
   return (
@@ -66,8 +68,14 @@ const HeaderOption = ({ t, router, theme }) => {
         </li>
         <li
           onClick={() => {
-            i18n.changeLanguage(i18n.language === "en" ? "cn" : "en");
-            localStorage.setItem("lng", i18n.language === "en" ? "cn" : "en");
+            console.log(i18n.language, "i18n.language");
+            i18n.changeLanguage(
+              localStorage.getItem("lng") === "en" ? "cn" : "en"
+            );
+            localStorage.setItem(
+              "lng",
+              localStorage.getItem("lng") === "en" ? "cn" : "en"
+            );
           }}
           className="col-lg-auto mt-2 pb-3"
         >

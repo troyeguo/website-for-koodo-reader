@@ -9,7 +9,7 @@ const DownloadDemo = ({ t }) => {
       alert(t("请在电脑上下载本应用"));
       return;
     }
-    window.location.href = url;
+    window.open(url);
   };
   const renderDownload = () => {
     return downloadOptions.map((item) => {
