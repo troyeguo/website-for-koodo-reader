@@ -5,18 +5,28 @@ import { withTranslation } from "../i18n";
 
 const Share = ({ t }) => {
   const renderShare = () => {
+    const handleJump = (url) => {
+      window.open(url);
+    };
     return shareOptions.map((item) => {
       return (
-        <a
-          href={item.url}
-          target="_blank"
-          rel="noopener noreferrer"
+        <span
+          onClick={() => handleJump(item.url)}
           className="col-sm-12 col-lg-4 my-2 row justify-content-center"
           key={item.id}
         >
           <div
-            className="share-button row justify-content-center align-items-center"
-            style={{ backgroundColor: item.color }}
+            className="row justify-content-center align-items-center"
+            style={{
+              backgroundColor: item.color,
+              width: 116,
+              height: 48,
+              opacity: 1,
+              borderRadius: 24,
+              color: "white",
+              fontSize: "1rem",
+              cursor: "pointer",
+            }}
           >
             <svg className={"icon m-1"} aria-hidden="true">
               <use href={`#icon-${item.icon}`}></use>
@@ -24,7 +34,7 @@ const Share = ({ t }) => {
 
             {t(item.name)}
           </div>
-        </a>
+        </span>
       );
     });
   };
