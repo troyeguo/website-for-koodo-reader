@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { withRouter } from "next/router";
 import { i18n, Link, withTranslation } from "../i18n";
 
-const HeaderOption = ({ t, router }) => {
+const HeaderOption = ({ t, router, theme }) => {
   const routeName = router.pathname;
   useEffect(() => {
     if (localStorage.getItem("lng")) {
@@ -28,22 +28,30 @@ const HeaderOption = ({ t, router }) => {
       <div className="row ">
         <li className="col-lg-auto mt-2">
           <Link href="/">
-            <a className={routeName === "/" ? "froze" : ""}>{t("首页")}</a>
+            <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
+              {t("首页")}
+            </a>
           </Link>
         </li>
         <li className="col-lg-auto mt-2">
           <Link href="/faq">
-            <a className={routeName === "/" ? "froze" : ""}>{t("常见问题")}</a>
+            <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
+              {t("常见问题")}
+            </a>
           </Link>
         </li>
         <li className="col-lg-auto mt-2">
           <Link href="/log">
-            <a className={routeName === "/" ? "froze" : ""}>{t("更新日志")}</a>
+            <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
+              {t("更新日志")}
+            </a>
           </Link>
         </li>
         <li className="col-lg-auto mt-2">
           <Link href="/support">
-            <a className={routeName === "/" ? "froze" : ""}>{t("客户支持")}</a>
+            <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
+              {t("客户支持")}
+            </a>
           </Link>
         </li>
         <li className="col-lg-auto mt-2">
@@ -51,7 +59,7 @@ const HeaderOption = ({ t, router }) => {
             href="https://github.com/troyeguo/koodo-reader"
             target="_blank"
             rel="noopener noreferrer"
-            className={routeName === "/" ? "froze" : ""}
+            className={theme === "dark" && routeName === "/" ? "froze" : ""}
           >
             <svg className="icon" aria-hidden="true">
               <use href="#icon-github"></use>
@@ -71,7 +79,10 @@ const HeaderOption = ({ t, router }) => {
           }}
           className="col-lg-auto mt-2 pb-3"
         >
-          <a href="#" className={routeName === "/" ? "froze" : ""}>
+          <a
+            href="#"
+            className={theme === "dark" && routeName === "/" ? "froze" : ""}
+          >
             <svg className="icon" aria-hidden="true">
               <use href="#icon-earth"></use>
             </svg>
