@@ -9,14 +9,6 @@ const DownloadDemo = ({ t }) => {
       alert(t("请在电脑上下载本应用"));
       return;
     }
-    if (
-      navigator.appVersion.indexOf("NT 6.1") ||
-      navigator.appVersion.indexOf("NT 5.1") ||
-      navigator.appVersion.indexOf("NT 6.0")
-    ) {
-      alert(t("暂不支持您的系统"));
-      return;
-    }
     window.open(url);
   };
   const renderDownload = () => {
