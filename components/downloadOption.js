@@ -9,6 +9,14 @@ const DownloadDemo = ({ t }) => {
       alert(t("请在电脑上下载本应用"));
       return;
     }
+    if (
+      navigator.appVersion.indexOf("NT 6.1") ||
+      navigator.appVersion.indexOf("NT 5.1") ||
+      navigator.appVersion.indexOf("NT 6.0")
+    ) {
+      alert(t("暂不支持您的系统"));
+      return;
+    }
     window.open(url);
   };
   const renderDownload = () => {
@@ -23,19 +31,14 @@ const DownloadDemo = ({ t }) => {
           <svg className={"icon download-icon col-12 mt-4"} aria-hidden="true">
             <use href={`#icon-${item.icon}`}></use>
           </svg>
-          <h1 className="download-title col-12 my-2">{item.title}</h1>
+          <h1 className="download-title col-12 my-2">{t(item.title)}</h1>
           <a
             onClick={() => {
               handleClick(item.url);
             }}
           >
             <div className="download-button row justify-content-center align-items-center col-9 m-4">
-              {item.id === 4 ? t("网页版") : t("下载")}
-              {item.id === 4 ? (
-                <svg className="icon ml-2" aria-hidden="true">
-                  <use href="#icon-qianjin"></use>
-                </svg>
-              ) : null}
+              {t("下载")}
             </div>
           </a>
         </div>

@@ -4,53 +4,15 @@ import { withRouter } from "next/router";
 import { i18n, Link, withTranslation } from "../i18n";
 import HeaderOption from "./headerOption";
 const Header = ({ t, router }) => {
-  const [theme, setTheme] = useState("dark");
   const routeName = router.pathname;
   const [collapse, setCollapse] = useState(true);
-  useEffect(() => {
-    var scrollFunc = function (e) {
-      e = e || window.event;
-      if (e.wheelDelta) {
-        let offsetHeight =
-          document.body.scrollTop || document.documentElement.scrollTop;
-        if (offsetHeight > 150) {
-          setTheme("light");
-        } else {
-          setTheme("dark");
-        }
-      } else if (e.detail) {
-        //Firefox滑轮事件
-        let offsetHeight =
-          document.body.scrollTop || document.documentElement.scrollTop;
-        console.log(offsetHeight);
-        if (offsetHeight > 150) {
-          setTheme("light");
-        } else {
-          setTheme("dark");
-        }
-      }
-    };
-    //给页面绑定滑轮滚动事件
-    if (document.addEventListener) {
-      //firefox
-      document.addEventListener("DOMMouseScroll", scrollFunc, false);
-    }
-    //滚动滑轮触发scrollFunc方法 //ie 谷歌
-    window.onmousewheel = document.onmousewheel = scrollFunc;
-  }, []);
   return (
-    <div
-      className={
-        theme === "dark" && routeName === "/"
-          ? "container-fluid header-wrapper froze"
-          : "container-fluid header-wrapper scroll"
-      }
-    >
+    <div className="container-fluid header-wrapper">
       <div className="container">
         <div className="row justify-content-between">
           <div className="my-2 ">
             <Link href="/">
-              {theme === "dark" && routeName === "/" ? (
+              {routeName === "/" ? (
                 <a>
                   <svg className="icon icon-black" aria-hidden="true">
                     <use href="#icon-zu49"></use>
@@ -78,9 +40,9 @@ const Header = ({ t, router }) => {
                 setCollapse(true);
               }}
             >
-              {!collapse ? <HeaderOption theme={theme} /> : null}
+              {!collapse ? <headerOption /> : null}
               <div className=" shadow-nav">
-                <HeaderOption theme={theme} />
+                <HeaderOption />
               </div>
               <svg
                 className="icon icon-more"
@@ -96,7 +58,7 @@ const Header = ({ t, router }) => {
                 className={"row ml-3"}
                 style={{ position: "relative", bottom: 5 }}
               >
-                {theme === "dark" && routeName === "/" ? null : (
+                {routeName === "/" ? null : (
                   <li className="col-auto">
                     <Link href="/download">
                       <div
@@ -122,10 +84,11 @@ const Header = ({ t, router }) => {
           font-size: calc(0.9rem + 0.2vw);
           font-weight: 600;
           line-height: 24px;
-          position: fixed;
-          top: 0;
           z-index: 20;
           height: 83px;
+          position: absolute;
+          top: 0px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.07);
         }
         .header-name {
           display: inline-block;
@@ -182,7 +145,7 @@ const Header = ({ t, router }) => {
             display: none;
           }
           .header-collapse {
-            background-color: ${theme === "light" || routeName !== "/"
+            background-color: ${routeName !== "/"
               ? "rgba(250,250,250,1)"
               : "rgba(0, 0, 0, 1)"};
             text-align: center;

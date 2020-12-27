@@ -5,7 +5,7 @@ const downloadOptions = [
     id: 1,
     icon: "windows",
     title: "Windows",
-    url: `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-Web-Setup-${version}.exe`,
+    url: `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}.exe`,
   },
   {
     id: 2,
@@ -21,9 +21,9 @@ const downloadOptions = [
   },
   {
     id: 4,
-    icon: "web",
-    title: "Web",
-    url: "https://reader.960960.xyz",
+    icon: "windows",
+    title: "便携版",
+    url: `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}-Portable.exe`,
   },
 ];
 module.exports = downloadOptions;

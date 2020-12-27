@@ -1,15 +1,6 @@
 export const aboutInfo = [
   {
     id: 1,
-    icon: "zu54",
-    color1: "#1D2FFD",
-    color2: "#3282FA",
-    question: "Koodo Reader 是怎么诞生的？",
-    answer:
-      "Koodo Reader 诞生于2020年春，因为新冠病毒的爆发，学校停课，开发者在家用了一个月的时间完成了整个软件从设计，开发到上线的全部流程。",
-  },
-  {
-    id: 2,
     icon: "zu56",
     color1: "#FE7326",
     color2: "#FFD547",
@@ -17,14 +8,24 @@ export const aboutInfo = [
     answer: "软件安装包托管在GitHub上，国内部分地区会出现下载速度不稳定的情况",
   },
   {
+    id: 2,
+    icon: "zu54",
+    color1: "#1D2FFD",
+    color2: "#3282FA",
+    question: "电子书体积较大时，为什么会出现卡顿？",
+    answer:
+      "Koodo Reader 基于Electron和JavaScript开发，性能无法和基于原生语言开发的软件相比，因此建议您导入的epub，azw3，mobi，pdf文件体积不要超过100M，txt文件体积不要超过4M.",
+  },
+  {
     id: 3,
     icon: "sync",
     color1: "#FF5050",
     color2: "#D83BE2",
-    question: "如何备份和恢复数据？",
+    question: "Windows 7 上卡在加载页面怎么办？",
     answer:
-      "点击右上角的 “备份和恢复” 按钮按照提示一步步操作就可以了，备份的文件以 zip 的形式保存，文件名为备份日期。",
+      "目前 Koodo Reader 还不支持 Windows 7系统，出现这个问题原因也未知，您可以使用网页版替代",
   },
+
   {
     id: 4,
     icon: "zu57",
@@ -32,6 +33,6 @@ export const aboutInfo = [
     color2: "#4AC22A",
     question: "我要如何联系你？",
     answer:
-      "对于问题咨询，功能改进和 bug 反馈请前往客户支持页面，您也可以直接通过邮箱的方式与开发者取得联系。",
+      "对于问题咨询，功能改进和 bug 反馈请点击网站顶部的客户支持页面，与开发者取得联系",
   },
 ];
