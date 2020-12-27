@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Host: https://koodo.960960.xyz
+Sitemap: https://koodo.960960.xyz/sitemap.xml
+https://koodo.960960.xyz/sitemap.xml
