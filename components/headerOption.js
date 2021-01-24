@@ -26,26 +26,29 @@ const HeaderOption = ({ t, router, theme }) => {
   return (
     <div>
       <div className="row ">
-        <li className="col-lg-auto mt-2">
+        <li className="col-lg-auto mt-2 faq">
           <Link href="/faq">
             <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
               {t("常见问题")}
             </a>
           </Link>
+          <div className="header-underline1"></div>
         </li>
-        <li className="col-lg-auto mt-2">
+        <li className="col-lg-auto mt-2 log">
           <Link href="/log">
             <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
               {t("更新日志")}
             </a>
           </Link>
+          <div className="header-underline2"></div>
         </li>
-        <li className="col-lg-auto mt-2">
+        <li className="col-lg-auto mt-2 support">
           <Link href="/support">
             <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
               {t("客户支持")}
             </a>
           </Link>
+          <div className="header-underline3"></div>
         </li>
         <li className="col-lg-auto mt-2">
           <a
@@ -89,6 +92,29 @@ const HeaderOption = ({ t, router, theme }) => {
       <style jsx>{`
         .froze {
           color: white;
+        }
+        .header-underline1,
+        .header-underline2,
+        .header-underline3 {
+          position: absolute;
+          bottom: 10px;
+          left: 0px;
+          width: 80%;
+          margin-left: 10%;
+          height: 2px;
+          background-color: rgba(255, 226, 183, 1);
+          transform-origin: center;
+          transition: 0.2s;
+          transform: scaleX(0);
+        }
+        .faq:hover .header-underline1 {
+          transform: scaleX(1);
+        }
+        .log:hover .header-underline2 {
+          transform: scaleX(1);
+        }
+        .support:hover .header-underline3 {
+          transform: scaleX(1);
         }
       `}</style>
     </div>

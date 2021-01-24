@@ -14,7 +14,7 @@ export const aboutInfo = [
     color2: "#3282FA",
     question: "电子书体积较大时，为什么会出现卡顿？",
     answer:
-      "Koodo Reader 基于Electron和JavaScript开发，性能无法和基于原生语言开发的软件相比，因此建议您导入的epub，azw3，mobi，pdf文件体积不要超过100M，txt文件体积不要超过4M.",
+      "Koodo Reader 基于Electron和JavaScript开发，性能无法和基于原生语言开发的软件相比，因此建议您导入的epub，azw3，mobi，pdf文件体积不要超过100M，txt文件体积不要超过4M。",
   },
   {
     id: 3,

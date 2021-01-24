@@ -85,10 +85,6 @@ class CustomDocument extends Document {
           <meta
             name="msapplication-config"
             content="/icons/browserconfig.xml"
-          />{" "}
-          <link
-            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,600"
-            rel="stylesheet"
           />
           <meta name="theme-color" content="#ffffff" />
           <link href="/lib/aos.css" rel="stylesheet" />{" "}

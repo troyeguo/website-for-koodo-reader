@@ -16,7 +16,7 @@ const Footer = ({ t }) => (
       <div style={{ position: "relative", bottom: "15px" }}>
         <a className="link">
           {t(
-            "Koodo Reader 是一个免费开源的电子书阅读器，支持 epub，pdf，mobi，azw3 和 txt"
+            "Koodo Reader 是一个开源的电子书阅读器，支持 epub、pdf、mobi、azw3和txt"
           )}
         </a>
       </div>

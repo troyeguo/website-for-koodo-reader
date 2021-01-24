@@ -17,7 +17,7 @@ const Cover = ({ t }) => (
             <p className="title text-center">{t("发现阅读新世界")}</p>
             <p className="subtitle text-center">
               {t(
-                "Koodo Reader 是一个开源的电子书阅读器，支持 epub，pdf，mobi，azw3 和 txt"
+                "Koodo Reader 是一个开源的电子书阅读器，支持 epub、pdf、mobi、azw3和txt"
               )}
             </p>
             <div className="container cover-button">
