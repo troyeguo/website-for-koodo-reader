@@ -58,15 +58,15 @@ const MoreFeature = ({ t }) => {
           text-align: center;
         }
         .more-title {
-          font-size: 22px;
+          font-size: 1.3rem;
           font-weight: 500;
           line-height: 33px;
-          color: rgba(0, 0, 0, 1);
+          color: rgba(75, 75, 75, 1);
           opacity: 1;
           margin: 10px 0px;
         }
         .more-subtitle {
-          font-size: 15px;
+          font-size: 1rem;
           font-weight: 500;
           line-height: 18px;
           color: rgba(85, 90, 100, 1);
@@ -74,7 +74,7 @@ const MoreFeature = ({ t }) => {
         }
         .more-question {
           font-size: calc(1rem + 1.8vw);
-          font-weight: bold;
+          font-weight: 600;
           color: rgba(0, 0, 0, 1);
           opacity: 1;
           text-align: center;

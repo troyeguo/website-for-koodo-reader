@@ -14,7 +14,7 @@ class CustomDocument extends Document {
           <meta name="application-name" content="Koodo Reader" />
           <meta
             name="description"
-            content="Koodo Reader is a open-source eBook reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+            content="Koodo Reader is an open-source eBook reader with backup and restore support, runs on Windows, Mac, Linux and Web"
           />
           <meta name="referrer" content="unsafe-url" />
           <meta
@@ -23,7 +23,7 @@ class CustomDocument extends Document {
           />
           <meta
             itemProp="description"
-            content="Koodo Reader is a open-source eBook reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+            content="Koodo Reader is an open-source eBook reader with backup and restore support, runs on Windows, Mac, Linux and Web"
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://koodo.960960.xyz" />
@@ -33,7 +33,7 @@ class CustomDocument extends Document {
           />
           <meta
             property="og:description"
-            content="Koodo Reader is a open-source EBook reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+            content="Koodo Reader is an open-source EBook reader with backup and restore support, runs on Windows, Mac, Linux and Web"
           />
           <meta
             property="og:image"
@@ -47,7 +47,7 @@ class CustomDocument extends Document {
           />
           <meta
             property="twitter:description"
-            content="Koodo Reader is a open-source EBook reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+            content="Koodo Reader is an open-source EBook reader with backup and restore support, runs on Windows, Mac, Linux and Web"
           />
           <meta
             property="twitter:image"
@@ -85,11 +85,28 @@ class CustomDocument extends Document {
           <meta
             name="msapplication-config"
             content="/icons/browserconfig.xml"
+          />{" "}
+          <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,600"
+            rel="stylesheet"
           />
           <meta name="theme-color" content="#ffffff" />
           <link href="/lib/aos.css" rel="stylesheet" />{" "}
           <script src="/lib/aos.js"></script>
           <script src="https://at.alicdn.com/t/font_1803854_q7xmgrr4cy.js" />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              var _hmt = _hmt || [];
+              (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?3eacc64ea8b140fa42d83cc7fdaf2679";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+              })();
+            `,
+            }}
+          />
           <link href="/lib/bootstrap-grid.min.css" rel="stylesheet" />
           <link rel="dns-prefetch" href="https://koodo.960960.xyz" />
         </Head>

@@ -27,13 +27,6 @@ const HeaderOption = ({ t, router, theme }) => {
     <div>
       <div className="row ">
         <li className="col-lg-auto mt-2">
-          <Link href="/">
-            <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
-              {t("首页")}
-            </a>
-          </Link>
-        </li>
-        <li className="col-lg-auto mt-2">
           <Link href="/faq">
             <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
               {t("常见问题")}
@@ -86,7 +79,9 @@ const HeaderOption = ({ t, router, theme }) => {
             <svg className="icon" aria-hidden="true">
               <use href="#icon-earth"></use>
             </svg>
-            <span className="change-lang mx-2">{t("English")}</span>
+            <span className="change-lang mx-2" style={{ fontWeight: 500 }}>
+              {t("English")}
+            </span>
           </a>
         </li>
       </div>

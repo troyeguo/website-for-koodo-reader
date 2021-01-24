@@ -1,11 +1,6 @@
 export const moreFeature = [
   { id: 1, icon: "zu9", title: "翻译功能", subtitle: "几十种语言即时在线翻译" },
-  {
-    id: 2,
-    icon: "zu11",
-    title: "搜索功能",
-    subtitle: "从上千本书中快速搜索到你寻找的图书",
-  },
+
   {
     id: 3,
     icon: "zu16",
@@ -18,12 +13,7 @@ export const moreFeature = [
     title: "书签功能",
     subtitle: "使用书签快速定位到之前的位置",
   },
-  {
-    id: 5,
-    icon: "zu14",
-    title: "永久免费",
-    subtitle: "阅读器将永久免费并不断添加更多功能",
-  },
+
   {
     id: 6,
     icon: "zu13",
@@ -41,11 +31,5 @@ export const moreFeature = [
     icon: "touch",
     title: "触控屏支持",
     subtitle: "完美支持触控的的各种手势操作",
-  },
-  {
-    id: 9,
-    icon: "tag",
-    title: "标签功能",
-    subtitle: "给笔记和书摘添加标签，方便归纳整理",
   },
 ];

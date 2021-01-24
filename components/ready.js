@@ -57,9 +57,9 @@ const Ready = ({ t }) => (
       }
       .question {
         font-size: calc(1rem + 2vw);
-        font-weight: bold;
+        font-weight: 600;
         line-height: 80px;
-        color: rgba(0, 0, 0, 1);
+        color: rgba(75, 75, 75, 1);
         opacity: 0.83;
         text-align: center;
         margin-top: 40px;
@@ -79,7 +79,7 @@ const Ready = ({ t }) => (
         opacity: 1;
         border-radius: 23px;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 24px;
         color: white;
         opacity: 1;
@@ -97,7 +97,7 @@ const Ready = ({ t }) => (
         opacity: 1;
         border-radius: 23px;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 24px;
         color: rgba(0, 0, 0, 1);
         opacity: 1;

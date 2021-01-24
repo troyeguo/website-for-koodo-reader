@@ -14,10 +14,10 @@ const Cover = ({ t }) => (
           style={{ height: "100%" }}
         >
           <div className="col-10  mt-6 mb-md-5 mb-lg-0">
-            <p className="title text-center">{t("开启全新阅读体验")}</p>
+            <p className="title text-center">{t("发现阅读新世界")}</p>
             <p className="subtitle text-center">
               {t(
-                "Koodo Reader 是一个免费开源的电子书阅读器，支持 epub，pdf，mobi，azw3 和 txt"
+                "Koodo Reader 是一个开源的电子书阅读器，支持 epub，pdf，mobi，azw3 和 txt"
               )}
             </p>
             <div className="container cover-button">
@@ -73,7 +73,7 @@ const Cover = ({ t }) => (
       }
       .title {
         font-size: calc(1rem + 2.5vw);
-        font-weight: bold;
+        font-weight: 600;
         line-height: 1.2;
         color: rgba(255, 255, 255, 1);
         opacity: 1;
@@ -96,7 +96,7 @@ const Cover = ({ t }) => (
       }
       @media (max-width: 768px) {
         .title {
-          margin-top: 0px;
+          margin-top: 300px;
         }
         .subtitle {
           font-size: 1rem;
@@ -107,7 +107,7 @@ const Cover = ({ t }) => (
           width:100%;
           background:url('/images/cover.svg');
           margin-bottom:20px;
-          
+          background-position: 52% 75%;
         }
         .cover {
           display:none
@@ -128,7 +128,7 @@ const Cover = ({ t }) => (
         border-radius: 23px;
         font-size: 18px;
         color: rgba(0, 0, 0, 1);
-        font-weight: 600;
+        font-weight: 500;
       }
       .preview-button {
         width:175px;
@@ -137,7 +137,7 @@ const Cover = ({ t }) => (
         opacity: 1;
         border-radius: 23px;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 24px;
         color: rgba(0, 0, 0, 1);
         opacity: 1;

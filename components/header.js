@@ -124,7 +124,7 @@ const Header = ({ t, router }) => {
         .header-wrapper {
           opacity: 1;
           font-size: calc(0.9rem + 0.2vw);
-          font-weight: 600;
+          font-weight: 500;
           line-height: 24px;
           position: fixed;
           top: 0;
@@ -137,7 +137,7 @@ const Header = ({ t, router }) => {
           position: relative;
           bottom: 20px;
           left: 10px;
-          font-weight: 600;
+          font-weight: 500;
         }
         .icon-more {
           font-size: 0;

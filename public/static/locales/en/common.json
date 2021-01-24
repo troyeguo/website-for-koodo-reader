@@ -3,8 +3,8 @@
   "快使用 Koodo Reader 管理你的电子书吧！": "All your books in one place, organized and safely stored",
   "下载": "Download",
   "网页版": "Preview",
-  "开启全新阅读体验": "All-in-one eBook reader",
-  "Koodo Reader 是一个免费开源的电子书阅读器，支持 epub，pdf，mobi，azw3 和 txt": "Koodo Reader is a open-source eBook reader for epub, pdf, mobi, azw3 and txt",
+  "发现阅读新世界": "All-in-one eBook reader",
+  "Koodo Reader 是一个开源的电子书阅读器，支持 epub，pdf，mobi，azw3 和 txt": "Koodo Reader is an open-source eBook reader for epub, pdf, mobi, azw3 and txt",
   "分享给更多朋友": "Share with the world",
   "把你对 Koodo Reader 的喜爱分享给更多的人": "Share this free eBook reader and help us spread the word!",
   "推特": "Twitter",
@@ -70,5 +70,9 @@
   "Koodo Reader 支持 Windows、macOS、Linux 和网页版": "Koodo Reader runs on Windows, macOS, Linux, Web",
   "同步与备份": "Never Lose Data",
   "使用您喜欢的网盘同步您的数据或保存到本地存储": "Sync your data  with Dropbox, OneDrive and more.",
+  "电子书体积较大时，为什么会出现卡顿？": "Software crashes when the imported book is too large",
+  "Koodo Reader 基于Electron和JavaScript开发，性能无法和基于原生语言开发的软件相比，因此建议您导入的epub，azw3，mobi，pdf文件体积不要超过100M，txt文件体积不要超过4M.": "Koodo Reader is built with Electron and JavaScript which greatly limit its performance, we recommand you not importing epub, azw3, mobi, pdf fileS with size larger than 100M, txt fileS with size larger than 4M",
+  "Windows 7 上卡在加载页面怎么办？": "Software freeze on splash screen when running on Windows 7",
+  "目前 Koodo Reader 还不支持 Windows 7系统，出现这个问题原因也未知，您可以使用网页版替代": "Koodo Reader don't support Windows 7 yet, the reason is under investigation, you can use web version instead",
   "个人博客": "Profolio"
 }

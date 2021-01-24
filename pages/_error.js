@@ -29,7 +29,7 @@ const Error = ({ statusCode, t }) => (
         .wrap-404 {
           min-height: 500px;
           padding-top: 100px;
-          font-weight: 500;
+          font-weight: 600;
         }
         .content-error {
           justify-concent: start;
@@ -37,7 +37,7 @@ const Error = ({ statusCode, t }) => (
         .wrap-404 .content-error h1 {
           color: #434e59;
           font-size: 72px;
-          font-weight: bold;
+          font-weight: 600;
           line-height: 72px;
           margin-bottom: 24px;
         }

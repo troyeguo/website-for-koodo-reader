@@ -79,14 +79,14 @@ const Log = ({ t }) => {
       <style global jsx>{`
         .version-title {
           font-size: calc(1rem + 2vw);
-          font-weight: bold;
+          font-weight: 600;
           line-height: 46px;
           color: rgba(0, 0, 0, 1);
           opacity: 0.7;
         }
         .version-detail {
           font-size: 20px;
-          font-weight: 500;
+          font-weight: 600;
           line-height: 27px;
           color: rgba(0, 0, 0, 1);
           opacity: 0.59;
@@ -109,7 +109,7 @@ const Log = ({ t }) => {
           opacity: 1;
           border-radius: 17px;
           font-size: 12px;
-          font-weight: 500;
+          font-weight: 600;
           line-height: 16px;
           color: rgba(255, 255, 255, 1);
           text-align: center;
@@ -126,7 +126,7 @@ const Log = ({ t }) => {
           opacity: 1;
           border-radius: 17px;
           font-size: 12px;
-          font-weight: 500;
+          font-weight: 600;
           line-height: 16px;
           color: rgba(255, 255, 255, 1);
           text-align: center;

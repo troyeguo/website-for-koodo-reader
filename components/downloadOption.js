@@ -57,7 +57,7 @@ const DownloadDemo = ({ t }) => {
           width: 84px;
           height: 27px;
           font-size: 20px;
-          font-weight: 600;
+          font-weight: 500;
           line-height: 27px;
           color: rgba(0, 0, 0, 1);
           opacity: 1;

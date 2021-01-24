@@ -5,7 +5,7 @@ import { withTranslation, Link } from "../i18n";
 
 const Footer = ({ t }) => (
   <section className="row justify-content-around footer-text m-0 pt-4">
-    <div className="col-12 col-md-4 align-items-baseline mb-2">
+    <div className="col-12 col-md-4 align-items-baseline mb-2 footer-intro">
       <a>
         <svg className="icon icon-black" aria-hidden="true">
           <use href="#icon-zu48"></use>
@@ -16,203 +16,206 @@ const Footer = ({ t }) => (
       <div style={{ position: "relative", bottom: "15px" }}>
         <a className="link">
           {t(
-            "Koodo Reader 是一个免费开源的电子书阅读器，支持 epub，pdf，mobi，azw3 和 txt"
+            "Koodo Reader 是一个开源的电子书阅读器，支持 epub，pdf，mobi，azw3 和 txt"
           )}
         </a>
       </div>
     </div>
-    <div
-      className="col-12 col-md-auto align-items-baseline  mb-2"
-      style={{ textAlign: "center" }}
-    >
-      <div>
-        <a className="link-id">{t("产品信息")}</a>
+    <div className="justify-content-center">
+      <div
+        className="col-12 col-md-auto align-items-baseline  mb-2"
+        style={{ textAlign: "left" }}
+      >
+        <div>
+          <a className="link-id">{t("产品信息")}</a>
+        </div>
+        <Link href="/faq">
+          <div>
+            <a className="link">{t("常见问题")}</a>
+          </div>
+        </Link>
+        <Link href="/log">
+          <div>
+            <a className="link">{t("更新日志")}</a>
+          </div>
+        </Link>
+        <Link href="/download">
+          <div>
+            <a className="link">{t("下载")}</a>
+          </div>
+        </Link>
       </div>
-      <Link href="/faq">
+
+      <div
+        className="col-12 col-md-auto align-items-baseline  mb-2"
+        style={{ textAlign: "left" }}
+      >
         <div>
-          <a className="link">{t("常见问题")}</a>
+          <a className="link-id">{t("用户条款")}</a>
         </div>
-      </Link>
-      <Link href="/log">
+        <Link href="/privacy">
+          <div>
+            <a className="link">{t("隐私策略")}</a>
+          </div>
+        </Link>
+        <Link href="/terms">
+          <div>
+            <a className="link">{t("服务条款")}</a>
+          </div>
+        </Link>
+        <Link href="/support">
+          <div>
+            <a className="link">{t("客户支持")}</a>
+          </div>
+        </Link>
+      </div>
+
+      <div
+        className="col-12 col-md-auto align-items-baseline  mb-2"
+        style={{ textAlign: "left" }}
+      >
         <div>
-          <a className="link">{t("更新日志")}</a>
+          <a className="link-id">{t("资源下载")}</a>
         </div>
-      </Link>
-      <Link href="/download">
         <div>
-          <a className="link">{t("下载")}</a>
+          <a
+            className="link"
+            href="https://sci-hub.se/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("Sci-hub")}
+          </a>
         </div>
-      </Link>
+        <div>
+          <a
+            className="link"
+            href="https://booksc.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("Z-Library")}
+          </a>
+        </div>
+        <div>
+          <a
+            className="link"
+            href="https://libgen.is/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("Libgen")}
+          </a>
+        </div>
+        <div>
+          <a
+            className="link"
+            href="http://www.gutenberg.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("Gutenberg")}
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12 col-md-auto align-items-baseline  mb-2"
+        style={{ textAlign: "left" }}
+      >
+        <div>
+          <a className="link-id">{t("同类产品")}</a>
+        </div>
+        <div>
+          <a
+            className="link"
+            href="https://www.neat-reader.cn/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("Neat Reader")}
+          </a>
+        </div>
+        <div>
+          <a
+            className="link"
+            href="http://www.bookxnote.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("BookxNote")}
+          </a>
+        </div>
+        <div>
+          <a
+            className="link"
+            href="https://calibre-ebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("Calibre")}
+          </a>
+        </div>
+        <div>
+          <a
+            className="link"
+            href="https://www.sumatrapdfreader.org/free-pdf-reader.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("Sumatra")}
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12 col-md-auto align-items-baseline  mb-2"
+        style={{ textAlign: "left" }}
+      >
+        <div>
+          <a className="link-id">{t("开发者信息")}</a>
+        </div>
+        <div>
+          <a
+            className="link"
+            href="https://960960.xyz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("个人博客")}
+          </a>
+        </div>
+        <div>
+          <a
+            className="link"
+            href="https://github.com/troyeguo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("Github")}
+          </a>
+        </div>
+        <div>
+          <a
+            className="link"
+            href="https://dribbble.com/troyeguo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("Dribbble")}
+          </a>
+        </div>
+        <div>
+          <a
+            className="link"
+            href="https://www.behance.net/a22370262185571"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("Behance")}
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div
-      className="col-12 col-md-auto align-items-baseline  mb-2"
-      style={{ textAlign: "center" }}
-    >
-      <div>
-        <a className="link-id">{t("用户条款")}</a>
-      </div>
-      <Link href="/privacy">
-        <div>
-          <a className="link">{t("隐私策略")}</a>
-        </div>
-      </Link>
-      <Link href="/terms">
-        <div>
-          <a className="link">{t("服务条款")}</a>
-        </div>
-      </Link>
-      <Link href="/support">
-        <div>
-          <a className="link">{t("客户支持")}</a>
-        </div>
-      </Link>
-    </div>
-
-    <div
-      className="col-12 col-md-auto align-items-baseline  mb-2"
-      style={{ textAlign: "center" }}
-    >
-      <div>
-        <a className="link-id">{t("资源下载")}</a>
-      </div>
-      <div>
-        <a
-          className="link"
-          href="https://sci-hub.se/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("Sci-hub")}
-        </a>
-      </div>
-      <div>
-        <a
-          className="link"
-          href="https://booksc.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("Z-Library")}
-        </a>
-      </div>
-      <div>
-        <a
-          className="link"
-          href="https://libgen.is/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("Libgen")}
-        </a>
-      </div>
-      <div>
-        <a
-          className="link"
-          href="http://www.gutenberg.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("Gutenberg")}
-        </a>
-      </div>
-    </div>
-    <div
-      className="col-12 col-md-auto align-items-baseline  mb-2"
-      style={{ textAlign: "center" }}
-    >
-      <div>
-        <a className="link-id">{t("同类产品")}</a>
-      </div>
-      <div>
-        <a
-          className="link"
-          href="https://www.neat-reader.cn/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("Neat Reader")}
-        </a>
-      </div>
-      <div>
-        <a
-          className="link"
-          href="http://www.bookxnote.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("BookxNote")}
-        </a>
-      </div>
-      <div>
-        <a
-          className="link"
-          href="https://calibre-ebook.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("Calibre")}
-        </a>
-      </div>
-      <div>
-        <a
-          className="link"
-          href="https://www.sumatrapdfreader.org/free-pdf-reader.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("Sumatra")}
-        </a>
-      </div>
-    </div>
-    <div
-      className="col-12 col-md-auto align-items-baseline  mb-2"
-      style={{ textAlign: "center" }}
-    >
-      <div>
-        <a className="link-id">{t("开发者信息")}</a>
-      </div>
-      <div>
-        <a
-          className="link"
-          href="https://960960.xyz/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("个人博客")}
-        </a>
-      </div>
-      <div>
-        <a
-          className="link"
-          href="https://github.com/troyeguo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("Github")}
-        </a>
-      </div>
-      <div>
-        <a
-          className="link"
-          href="https://dribbble.com/troyeguo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("Dribbble")}
-        </a>
-      </div>
-      <div>
-        <a
-          className="link"
-          href="https://www.linkedin.com/in/troyeguo/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("Linkedin")}
-        </a>
-      </div>
-    </div>
     <div
       className="col-12 row justify-content-center mt-5 footer-copyright"
       style={{ textAlign: "center" }}
@@ -227,9 +230,10 @@ const Footer = ({ t }) => (
         position: relative;
         bottom: 10px;
         left: 10px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 80px;
       }
+
       .icon-more {
         font-size: 0;
         cursor: pointer;

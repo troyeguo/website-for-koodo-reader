@@ -30,7 +30,7 @@ const Homepage = ({ t }) => (
       .demo-title {
         margin-top: 93px;
         font-size: calc(1rem + 3vw);
-        font-weight: bold;
+        font-weight: 600;
         line-height: 1.2;
         color: rgba(0, 0, 0, 1);
         opacity: 1;
