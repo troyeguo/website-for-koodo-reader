@@ -129,4 +129,8 @@
   .footer-intro {
     display: none;
   }
+
+  .title-decor {
+    width: 110px;
+  }
 }

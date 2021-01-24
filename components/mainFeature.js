@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { mainFeature } from "../configs/mainFeature";
 import { i18n, withTranslation } from "../i18n";
-
+import { isMobile } from "react-device-detect";
 const MainFeature = ({ t }) => {
   const renderFeature = () => {
     return mainFeature.map((item) => {
@@ -14,7 +14,13 @@ const MainFeature = ({ t }) => {
                 <h2 className="h1">{t(item.title)}</h2>
                 <div
                   className="title-decor"
-                  style={i18n.language === "en" ? { width: item.width } : {}}
+                  style={
+                    i18n.language === "en"
+                      ? isMobile
+                        ? { width: item.mWidth }
+                        : { width: item.width }
+                      : {}
+                  }
                 ></div>
                 <p className="lead">{t(item.subtitle)}</p>
 
