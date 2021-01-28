@@ -24,24 +24,29 @@ const DownloadDemo = ({ t }) => {
     return downloadOptions.map((item) => {
       return (
         <div
-          className="download-item col-md-6 col-lg-3 mb-4 mb-md-5 aos-init row my-lg-5 justify-content-center ml-1"
+          className="col-md-6 col-lg-3 mb-4 mb-md-5 aos-init row my-lg-5 justify-content-center ml-1"
           data-aos="fade-up"
           data-aos-delay={50 + item.id * 50}
           key={item.id}
         >
-          <svg className={"icon download-icon col-12 mt-4"} aria-hidden="true">
-            <use href={`#icon-${item.icon}`}></use>
-          </svg>
-          <h1 className="download-title col-12 my-2">{t(item.title)}</h1>
-          <a
-            onClick={() => {
-              handleClick(item.url);
-            }}
-          >
-            <div className="download-button row justify-content-center align-items-center col-9 m-4">
-              {t("下载")}
-            </div>
-          </a>
+          <div className="download-item ">
+            <svg
+              className={"icon download-icon col-12 mt-4"}
+              aria-hidden="true"
+            >
+              <use href={`#icon-${item.icon}`}></use>
+            </svg>
+            <h1 className="download-title col-12 my-2">{t(item.title)}</h1>
+            <a
+              onClick={() => {
+                handleClick(item.url);
+              }}
+            >
+              <div className="download-button row justify-content-center align-items-center col-9 m-4">
+                {t("下载")}
+              </div>
+            </a>
+          </div>
         </div>
       );
     });
@@ -83,7 +88,7 @@ const DownloadDemo = ({ t }) => {
           margin-top: 20px;
         }
         .download-item {
-          transition: 0.2s !important;
+          transition: 0.2s;
         }
         .download-item:hover {
           box-shadow: 0 0 15px rgba(75, 75, 75, 0.2);
