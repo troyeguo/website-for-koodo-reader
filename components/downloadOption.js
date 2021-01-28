@@ -49,6 +49,21 @@ const DownloadDemo = ({ t }) => {
   return (
     <div className="container">
       <div className="row justify-content-around">{renderDownload()}</div>
+      <div className="lanzou-download-title">国内蓝奏云下载地址</div>
+      <div className="lanzou-download-container">
+        <a
+          href="https://wwa.lanzous.com/b0c90cieb"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="lanzou-download-option">
+            https://wwa.lanzous.com/b0c90cieb
+          </span>
+        </a>
+
+        <span style={{ width: "50px", lineHeight: "30px" }}>密码:</span>
+        <span className="lanzou-download-option">1234</span>
+      </div>
       <style global jsx>{`
         .download-icon {
           font-size: calc(1rem + 4vw);
@@ -63,8 +78,27 @@ const DownloadDemo = ({ t }) => {
           opacity: 1;
           text-align: center;
         }
+        .lanzou-download-container {
+          text-align: center;
+          margin-top: 20px;
+        }
+        .download-item {
+          transition: 0.2s !important;
+        }
         .download-item:hover {
-          box-shadow: 0 0 12px rgba(75, 75, 75, 0.2);
+          box-shadow: 0 0 15px rgba(75, 75, 75, 0.2);
+          border-radius: 10px;
+        }
+        .lanzou-download-title {
+          text-align: center;
+          font-size: 20px;
+          font-weight: 500;
+          color: rgba(75, 75, 75, 1);
+        }
+        .lanzou-download-option {
+          color: #4299e1;
+          margin-right: 20px;
+          line-height: 30px;
         }
       `}</style>
     </div>
