@@ -91,7 +91,7 @@ const Cover = ({ t }) => (
 
       @media (max-width: 768px) {
         .title {
-          margin-top: 250px;
+          margin-top: 40vh;
         }
         .subtitle {
           font-size: 1rem;
