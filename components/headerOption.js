@@ -60,6 +60,9 @@ const HeaderOption = ({ t, router, theme }) => {
             <svg className="icon" aria-hidden="true">
               <use href="#icon-github"></use>
             </svg>
+            <span className="change-lang mx-2" style={{ fontWeight: 500 }}>
+              {t("Github")}
+            </span>
           </a>
         </li>
         <li

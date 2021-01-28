@@ -30,11 +30,11 @@ const Cover = ({ t }) => (
 
                 <div className="row preview-button m-2  justify-content-center align-items-center">
                   <a
-                    href="https://reader.960960.xyz"
+                    href="https://github.com/troyeguo/koodo-reader"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {t("网页版")}
+                    {t("Github")}
                     <svg className="icon ml-2" aria-hidden="true">
                       <use href="#icon-qianjin"></use>
                     </svg>
