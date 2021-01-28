@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { withTranslation } from "../i18n";
+import { withTranslation, i18n } from "../i18n";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import changeLogs from "../configs/logs";
+import changeLogs_en from "../configs/logs_en";
 const Log = ({ t }) => {
   const renderFix = (fixLogs) => {
     return fixLogs.map((item) => {
@@ -30,37 +31,39 @@ const Log = ({ t }) => {
     });
   };
   const renderLogs = () => {
-    return changeLogs.map((item, index) => {
-      return (
-        <div
-          data-aos="fade-up"
-          data-aos-delay={50 + index * 50}
-          key={item.version}
-          className="container mt-5 ml-sm-4 mr-sm-4"
-        >
-          <div className="row justify-content-center">
-            <div className="col-lg-7">
-              <div className="changelog-meta row justify-content-between align-items-center">
-                <div>
-                  <h3 className="version-title">
-                    {"Version" + " " + item.version}
-                  </h3>
-                  <div className="changelog-date">{item.date}</div>
-                </div>
+    return (i18n.language === "en" ? changeLogs_en : changeLogs).map(
+      (item, index) => {
+        return (
+          <div
+            data-aos="fade-up"
+            data-aos-delay={50 + index * 50}
+            key={item.version}
+            className="container mt-5 ml-sm-4 mr-sm-4"
+          >
+            <div className="row justify-content-center">
+              <div className="col-lg-7">
+                <div className="changelog-meta row justify-content-between align-items-center">
+                  <div>
+                    <h3 className="version-title">
+                      {"Version" + " " + item.version}
+                    </h3>
+                    <div className="changelog-date">{item.date}</div>
+                  </div>
 
-                <div className="log-firework mr-sm-3">🎉🎉🎉</div>
+                  <div className="log-firework mr-sm-3">🎉🎉🎉</div>
+                </div>
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-lg-7  p-0 m-0 mt-4">
+                {renderNew(item.new)}
+                {renderFix(item.fix)}
               </div>
             </div>
           </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-7  p-0 m-0 mt-4">
-              {renderNew(item.new)}
-              {renderFix(item.fix)}
-            </div>
-          </div>
-        </div>
-      );
-    });
+        );
+      }
+    );
   };
   return (
     <div>
