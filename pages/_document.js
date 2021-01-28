@@ -90,19 +90,6 @@ class CustomDocument extends Document {
           <link href="/lib/aos.css" rel="stylesheet" />{" "}
           <script src="/lib/aos.js"></script>
           <script src="https://at.alicdn.com/t/font_1803854_q7xmgrr4cy.js" />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-              var _hmt = _hmt || [];
-              (function() {
-                var hm = document.createElement("script");
-                hm.src = "https://hm.baidu.com/hm.js?3eacc64ea8b140fa42d83cc7fdaf2679";
-                var s = document.getElementsByTagName("script")[0]; 
-                s.parentNode.insertBefore(hm, s);
-              })();
-            `,
-            }}
-          />
           <link href="/lib/bootstrap-grid.min.css" rel="stylesheet" />
           <link rel="dns-prefetch" href="https://koodo.960960.xyz" />
         </Head>
