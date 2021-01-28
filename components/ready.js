@@ -59,7 +59,7 @@ const Ready = ({ t }) => (
         font-size: calc(1rem + 2vw);
         font-weight: 600;
         line-height: 80px;
-        color: rgba(75, 75, 75, 1);
+        color: black;
         opacity: 0.83;
         text-align: center;
         margin-top: 40px;
