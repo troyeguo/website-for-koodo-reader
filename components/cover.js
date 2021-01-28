@@ -6,69 +6,68 @@ const Cover = ({ t }) => (
   <div className="container-fluid cover-container" style={{ padding: 0 }}>
     <div className="cover-bg">
       <img src="/images/cover.svg" alt="Koodo Reader Cover" className="cover" />
-    </div>
-    <section className="bg-dark">
-      <div className="container" style={{ height: "100%" }}>
-        <div
-          className="row justify-content-center align-items-center"
-          style={{ height: "100%" }}
-        >
-          <div className="col-10  mt-6 mb-md-5 mb-lg-0">
-            <p className="title text-center">{t("发现阅读新世界")}</p>
-            <p className="subtitle text-center">
-              {t(
-                "Koodo Reader 是一个开源的电子书阅读器，支持 epub、pdf、mobi、azw3和txt"
-              )}
-            </p>
-            <div className="container cover-button">
-              <div className="row justify-content-md-center mt-4 cover-button">
-                <Link href="/download">
-                  <div className="row download-button m-2  justify-content-center align-items-center">
-                    <div>{t("下载")}</div>
-                  </div>
-                </Link>
+      <section className="bg-dark">
+        <div className="container" style={{ height: "100%" }}>
+          <div
+            className="row justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <div className="col-10  mt-6 mb-md-5 mb-lg-0">
+              <p className="title text-center">{t("发现阅读新世界")}</p>
+              <p className="subtitle text-center">
+                {t(
+                  "Koodo Reader 是一个开源的电子书阅读器，支持 epub、pdf、mobi、azw3和txt"
+                )}
+              </p>
+              <div className="container cover-button">
+                <div className="row justify-content-md-center mt-4 cover-button">
+                  <Link href="/download">
+                    <div className="row download-button m-2  justify-content-center align-items-center">
+                      <div>{t("下载")}</div>
+                    </div>
+                  </Link>
 
-                <div className="row preview-button m-2  justify-content-center align-items-center">
-                  <a
-                    href="https://github.com/troyeguo/koodo-reader"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {t("Github")}
-                    <svg className="icon ml-2" aria-hidden="true">
-                      <use href="#icon-qianjin"></use>
-                    </svg>
-                  </a>
+                  <div className="row preview-button m-2  justify-content-center align-items-center">
+                    <a
+                      href="https://github.com/troyeguo/koodo-reader"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t("Github")}
+                      <svg className="icon ml-2" aria-hidden="true">
+                        <use href="#icon-qianjin"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="w-50 h-50 bottom right position-absolute section-spacer"
-        data-jarallax-element="50"
-      >
-        <div className="blob blob-2 bg-gradient w-100 h-100"></div>
-      </div>
-      <div
-        className="w-50 h-50 bottom right position-absolute section-spacer"
-        data-jarallax-element="75"
-      >
-        <div className="blob blob-4 bg-white opacity-10 w-100 h-100"></div>
-      </div>
-      <div className="divider divider-bottom bg-white dark-theme"></div>
-    </section>
+        <div
+          className="w-50 h-50 bottom right position-absolute section-spacer"
+          data-jarallax-element="50"
+        >
+          <div className="blob blob-2 bg-gradient w-100 h-100"></div>
+        </div>
+        <div
+          className="w-50 h-50 bottom right position-absolute section-spacer"
+          data-jarallax-element="75"
+        >
+          <div className="blob blob-4 bg-white opacity-10 w-100 h-100"></div>
+        </div>
+        <div className="divider divider-bottom bg-white dark-theme"></div>
+      </section>
+    </div>
+
     <style jsx>{`
       .cover-container {
         color: white;
         width: 100%;
-        margin-bottom:100px
+        height:55vw;
+        overflow:hidden;
       }
       .cover {
-        position: absolute;
-        top:0;
-        left: 0;
         width:100%
       }
       .title {
@@ -77,7 +76,7 @@ const Cover = ({ t }) => (
         line-height: 1.2;
         color: rgba(255, 255, 255, 1);
         opacity: 1;
-        margin-top: calc(27vw);
+        margin-top:-300px;
         text-align:center
       }
       .subtitle {
@@ -89,14 +88,10 @@ const Cover = ({ t }) => (
         margin-top: 10px;
         text-align:center
       }
-      @media (max-width: 918px) {
-        .title {
-          margin-top: calc(20vw);
-        }
-      }
+
       @media (max-width: 768px) {
         .title {
-          margin-top: 300px;
+          margin-top: 250px;
         }
         .subtitle {
           font-size: 1rem;
@@ -119,6 +114,7 @@ const Cover = ({ t }) => (
       }
       .bg-dark {
         height: 100%;
+        width:100%;
       }
       .download-button {
         height: 46px;
