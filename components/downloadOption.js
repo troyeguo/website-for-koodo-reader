@@ -63,25 +63,22 @@ const DownloadDemo = ({ t }) => {
   return (
     <div className="container">
       <div className="row justify-content-around">{renderDownload()}</div>
-      {navigator.language === "zh-CN" && (
-        <>
-          <div className="lanzou-download-title">国内蓝奏云下载地址</div>
-          <div className="lanzou-download-container">
-            <a
-              href="https://wwa.lanzous.com/b0c90cieb"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="lanzou-download-option">
-                https://wwa.lanzous.com/b0c90cieb
-              </span>
-            </a>
 
-            <span style={{ width: "50px", lineHeight: "30px" }}>密码:</span>
-            <span className="lanzou-download-option">1234</span>
-          </div>
-        </>
-      )}
+      <div className="lanzou-download-title">{t("国内蓝奏云下载地址")}</div>
+      <div className="lanzou-download-container">
+        <a
+          href="https://wwa.lanzous.com/b0c90cieb"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="lanzou-download-option">
+            https://wwa.lanzous.com/b0c90cieb
+          </span>
+        </a>
+
+        <span style={{ width: "50px", lineHeight: "30px" }}>{t("密码")}:</span>
+        <span className="lanzou-download-option">1234</span>
+      </div>
 
       <style global jsx>{`
         .download-icon {

@@ -67,7 +67,6 @@ const HeaderOption = ({ t, router, theme }) => {
         </li>
         <li
           onClick={() => {
-            console.log(i18n.language, "i18n.language");
             i18n.changeLanguage(
               localStorage.getItem("lng") === "en" ? "cn" : "en"
             );
