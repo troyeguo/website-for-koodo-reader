@@ -24,12 +24,12 @@ const DownloadDemo = ({ t }) => {
     return downloadOptions.map((item) => {
       return (
         <div
-          className="col-md-6 col-lg-3 mb-4 mb-md-5 aos-init row my-lg-5 justify-content-center ml-1"
+          className="col-md-6 col-lg-3 mb-4 mb-md-5 aos-init row my-lg-5ml-1"
           data-aos="fade-up"
           data-aos-delay={50 + item.id * 50}
           key={item.id}
         >
-          <div className="download-item ">
+          <div className="download-item  justify-content-center">
             <svg
               className={"icon download-icon col-12 mt-4"}
               aria-hidden="true"
@@ -41,8 +41,17 @@ const DownloadDemo = ({ t }) => {
               onClick={() => {
                 handleClick(item.url);
               }}
+              style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignContent: "center",
+              }}
             >
-              <div className="download-button row justify-content-center align-items-center col-9 m-4">
+              <div
+                className="download-button row justify-content-center align-items-center col-9 m-4"
+                style={{ width: "64px !important" }}
+              >
                 {t("下载")}
               </div>
             </a>
@@ -72,9 +81,10 @@ const DownloadDemo = ({ t }) => {
       <style global jsx>{`
         .download-icon {
           font-size: calc(1rem + 4vw);
+          width: 100%;
         }
         .download-title {
-          width: 84px;
+          width: 100%;
           height: 27px;
           font-size: 20px;
           font-weight: 500;
@@ -89,6 +99,7 @@ const DownloadDemo = ({ t }) => {
         }
         .download-item {
           transition: 0.2s;
+          text-align: center;
         }
         .download-item:hover {
           box-shadow: 0 0 15px rgba(75, 75, 75, 0.2);
