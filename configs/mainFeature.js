@@ -17,10 +17,10 @@ export const mainFeature = [
   },
   {
     id: 3,
-    title: "同步与备份",
+    title: "备份与恢复",
     width: 270,
     mWidth: 170,
-    subtitle: "使用您喜欢的网盘同步您的数据或保存到本地存储",
+    subtitle: "使用您喜欢的网盘备份您的数据或保存到本地存储",
     icons: ["dropbox", "google", "mega", "computer"],
   },
 ];

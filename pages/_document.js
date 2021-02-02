@@ -9,7 +9,7 @@ class CustomDocument extends Document {
         <Head>
           <meta
             name="keywords"
-            content="ebook epub pdf mobi azw3 txt reader free koodo ebook 免费 阅读器 电子书"
+            content="ebook epub pdf mobi azw3 txt reader koodo ebook 免费 阅读器 电子书"
           />
           <meta name="application-name" content="Koodo Reader" />
           <meta
@@ -19,7 +19,7 @@ class CustomDocument extends Document {
           <meta name="referrer" content="unsafe-url" />
           <meta
             itemProp="name"
-            content="Koodo Reader - Free EBook Reader for Windows, Mac, Linux and Web"
+            content="Koodo Reader - Open-source EBook Reader for Windows, Mac, Linux and Web"
           />
           <meta
             itemProp="description"
@@ -29,7 +29,7 @@ class CustomDocument extends Document {
           <meta property="og:url" content="https://koodo.960960.xyz" />
           <meta
             property="og:title"
-            content="Koodo Reader - Free EBook Reader for Windows, Mac, Linux and Web"
+            content="Koodo Reader - Open-source EBook Reader for Windows, Mac, Linux and Web"
           />
           <meta
             property="og:description"
@@ -43,7 +43,7 @@ class CustomDocument extends Document {
           <meta property="twitter:url" content="https://koodo.960960.xyz" />
           <meta
             property="twitter:title"
-            content="Koodo Reader - Free EBook Reader for Windows, Mac, Linux and Web"
+            content="Koodo Reader - Open-source EBook Reader for Windows, Mac, Linux and Web"
           />
           <meta
             property="twitter:description"
