@@ -23,7 +23,3 @@ cd website-for-koodo-reader
 yarn
 yarn dev
 ```
-
-### 帮助与反馈
-
-您可以在 **issue** 区提问，我会在力所能及的范围内提供帮助
