@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { withTranslation, i18n } from "../i18n";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import { NextSeo } from "next-seo";
+
 import changeLogs from "../configs/logs";
 import changeLogs_en from "../configs/logs_en";
 const Log = ({ t }) => {
@@ -67,13 +69,17 @@ const Log = ({ t }) => {
   };
   return (
     <div>
+      <NextSeo
+        title="Changelog"
+        description="What's new about each version of Koodo Reader"
+      />
       <Header />
       <div className="container bg-dynamic mb-4">
         <div className="row section-title justify-content-center text-center ">
           <div className="col-md-9 col-lg-8 col-xl-7">
-            <h1 className="page-title">{t("更新日志")}</h1>
+            <h1 className="page-title">{t("Changelog")}</h1>
             <p className="page-subtitle">
-              {t("每个版本 Koodo Reader 的更新日志")}
+              {t("What's new about each version of Koodo Reader")}
             </p>
           </div>
         </div>

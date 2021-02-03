@@ -1,35 +1,40 @@
 export const moreFeature = [
-  { id: 1, icon: "zu9", title: "翻译功能", subtitle: "几十种语言即时在线翻译" },
+  {
+    id: 1,
+    icon: "zu9",
+    title: "Translation",
+    subtitle: "Instant Translation for over 30 language",
+  },
 
   {
     id: 3,
     icon: "zu16",
-    title: "书摘功能",
-    subtitle: "一键将你喜欢的文字添加到书摘中永久保存",
+    title: "Digest",
+    subtitle: "Easily save any sentences into digests with one click",
   },
   {
     id: 4,
     icon: "zu12",
-    title: "书签功能",
-    subtitle: "使用书签快速定位到之前的位置",
+    title: "Bookmark",
+    subtitle: "Use bookmarks to flag your reading progress",
   },
 
   {
     id: 6,
     icon: "zu13",
-    title: "听书功能",
-    subtitle: "使用听书功能来解放双手，自动翻页阅读",
+    title: "Text To Speech",
+    subtitle: "Use Text-to-speech function to free your hands",
   },
   {
     id: 7,
     icon: "note",
-    title: "笔记功能",
-    subtitle: "使用笔记随时记录所思所想",
+    title: "Note",
+    subtitle: "Never let good idea slip away",
   },
   {
     id: 8,
     icon: "touch",
-    title: "触控屏支持",
-    subtitle: "完美支持触控的的各种手势操作",
+    title: "Touch Screen",
+    subtitle: "Smoothen your reading experince",
   },
 ];

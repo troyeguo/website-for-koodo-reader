@@ -5,8 +5,11 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import DownloadOption from "../components/downloadOption";
 import Share from "../components/share";
+import { NextSeo } from "next-seo";
+
 const Homepage = ({ t }) => (
   <React.Fragment>
+    <NextSeo title="Download" description="Download option for Koodo Reader" />
     <Header />
     <div className="container">
       <section className="row justify-content-center demo-container">

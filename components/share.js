@@ -43,9 +43,9 @@ const Share = ({ t }) => {
       <div className="container my-5">
         <div className="row align-items-center justify-content-around text-center text-lg-left">
           <div className="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2 pl-lg-5 pl-xl-0">
-            <h2 className="h1">{t("分享给更多朋友")}</h2>
+            <h2 className="h1">{t("Share with the world")}</h2>
             <p className="lead">
-              {t("把你对 Koodo Reader 的喜爱分享给更多的人")}
+              {t("Share this eBook reader and help us spread the word!")}
             </p>
 
             <div className="row justify-content-around my-4">

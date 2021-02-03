@@ -16,10 +16,10 @@ const Error = ({ statusCode, t }) => (
         <div className="row content-error col-lg-5 align-items-center  ml-1">
           <div>
             <h1>{statusCode}</h1>
-            <p className="desc">{t("你来到了没有知识的荒原")}</p>
+            <p className="desc">{t("You seem lost")}</p>
             <Link href="/">
               <a>
-                <div>{t("返回首页")}</div>
+                <div>{t("Back to Home Page")}</div>
               </a>
             </Link>
           </div>

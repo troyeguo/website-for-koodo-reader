@@ -10,14 +10,15 @@ const HeaderOption = ({ t, router, theme }) => {
       i18n.changeLanguage(localStorage.getItem("lng"));
       return;
     }
-    if (
-      navigator.language === "zh-CN" ||
-      navigator.language === "zh-SG" ||
+    if (navigator.language === "zh-CN" || navigator.language === "zh-SG") {
+      i18n.changeLanguage("cn");
+      localStorage.setItem("lng", "cn");
+    } else if (
       navigator.language === "zh-TW" ||
       navigator.language === "zh-HK"
     ) {
-      i18n.changeLanguage("cn");
-      localStorage.setItem("lng", "cn");
+      i18n.changeLanguage("tw");
+      localStorage.setItem("lng", "tw");
     } else {
       i18n.changeLanguage("en");
       localStorage.setItem("lng", "en");
@@ -29,7 +30,7 @@ const HeaderOption = ({ t, router, theme }) => {
         <li className="col-lg-auto mt-2 faq">
           <Link href="/faq">
             <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
-              {t("常见问题")}
+              {t("FAQ")}
             </a>
           </Link>
           <div className="header-underline1"></div>
@@ -37,7 +38,7 @@ const HeaderOption = ({ t, router, theme }) => {
         <li className="col-lg-auto mt-2 log">
           <Link href="/log">
             <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
-              {t("更新日志")}
+              {t("Changelog")}
             </a>
           </Link>
           <div className="header-underline2"></div>
@@ -45,7 +46,7 @@ const HeaderOption = ({ t, router, theme }) => {
         <li className="col-lg-auto mt-2 support">
           <Link href="/support">
             <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
-              {t("客户支持")}
+              {t("Support")}
             </a>
           </Link>
           <div className="header-underline3"></div>

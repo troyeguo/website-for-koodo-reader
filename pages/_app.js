@@ -10,9 +10,7 @@ class MyApp extends App {
     return (
       <>
         <Head>
-          <title>
-            Koodo Reader - Open-source eBook Reader for Windows, Mac, Linux and Web
-          </title>
+          <title>Koodo Reader - A Open-source eBook Reader</title>
         </Head>
         <Component {...pageProps} />
       </>

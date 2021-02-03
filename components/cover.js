@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import { withTranslation, Link } from "../i18n";
 const Cover = ({ t }) => (
   <div className="container-fluid cover-container" style={{ padding: 0 }}>
@@ -13,17 +12,19 @@ const Cover = ({ t }) => (
             style={{ height: "100%" }}
           >
             <div className="col-10  mt-6 mb-md-5 mb-lg-0">
-              <p className="title text-center">{t("发现阅读新世界")}</p>
-              <p className="subtitle text-center">
-                {t(
-                  "Koodo Reader 是一个开源的电子书阅读器，支持 epub、pdf、mobi、azw3和txt"
-                )}
+              <p className="title text-center">
+                {t("All-in-one eBook reader")}
               </p>
+              <h1 className="subtitle text-center">
+                {t(
+                  "Koodo Reader is an open-source eBook reader for epub, pdf, mobi, azw3 and txt"
+                )}
+              </h1>
               <div className="container cover-button">
                 <div className="row justify-content-md-center mt-4 cover-button">
                   <Link href="/download">
                     <div className="row download-button m-2  justify-content-center align-items-center">
-                      <div>{t("下载")}</div>
+                      <div>{t("Download")}</div>
                     </div>
                   </Link>
 

@@ -19,7 +19,7 @@ class CustomDocument extends Document {
           <meta name="referrer" content="unsafe-url" />
           <meta
             itemProp="name"
-            content="Koodo Reader - Open-source EBook Reader for Windows, Mac, Linux and Web"
+            content="Koodo Reader - A Open-source EBook Reader"
           />
           <meta
             itemProp="description"
@@ -29,7 +29,7 @@ class CustomDocument extends Document {
           <meta property="og:url" content="https://koodo.960960.xyz" />
           <meta
             property="og:title"
-            content="Koodo Reader - Open-source EBook Reader for Windows, Mac, Linux and Web"
+            content="Koodo Reader - A Open-source EBook Reader"
           />
           <meta
             property="og:description"
@@ -43,7 +43,7 @@ class CustomDocument extends Document {
           <meta property="twitter:url" content="https://koodo.960960.xyz" />
           <meta
             property="twitter:title"
-            content="Koodo Reader - Open-source EBook Reader for Windows, Mac, Linux and Web"
+            content="Koodo Reader - A Open-source EBook Reader"
           />
           <meta
             property="twitter:description"

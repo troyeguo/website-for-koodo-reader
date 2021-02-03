@@ -4625,6 +4625,11 @@ next-i18next@^4.4.1:
     react-i18next "^11.0.0"
     url "^0.11.0"
 
+next-seo@^4.19.0:
+  version "4.19.0"
+  resolved "https://registry.npm.taobao.org/next-seo/download/next-seo-4.19.0.tgz#b3be79a544e420dbbf1e4fcff98dad9790f15e36"
+  integrity sha1-s755pUTkINu/Hk/P+Y2tl5DxXjY=
+
 next-sitemap@^1.3.22:
   version "1.4.15"
   resolved "https://registry.npm.taobao.org/next-sitemap/download/next-sitemap-1.4.15.tgz#6c4529c5550d7051338010642e253323f5ddcf67"

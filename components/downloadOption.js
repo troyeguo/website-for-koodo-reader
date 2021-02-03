@@ -6,7 +6,7 @@ import { isMobile } from "react-device-detect";
 const DownloadDemo = ({ t }) => {
   const handleClick = (url) => {
     if (isMobile) {
-      alert(t("请在电脑上下载本应用"));
+      alert(t("Please download this app on PC"));
       return;
     }
 
@@ -52,7 +52,7 @@ const DownloadDemo = ({ t }) => {
                 className="download-button row justify-content-center align-items-center col-9 m-4"
                 style={{ width: "64px !important" }}
               >
-                {t("下载")}
+                {t("Download")}
               </div>
             </a>
           </div>
@@ -64,7 +64,9 @@ const DownloadDemo = ({ t }) => {
     <div className="container">
       <div className="row justify-content-around">{renderDownload()}</div>
 
-      <div className="lanzou-download-title">{t("国内蓝奏云下载地址")}</div>
+      <div className="lanzou-download-title">
+        {t("Download option for Chinese users")}
+      </div>
       <div className="lanzou-download-container">
         <a
           href="https://wwa.lanzous.com/b0c90cieb"
@@ -76,7 +78,9 @@ const DownloadDemo = ({ t }) => {
           </span>
         </a>
 
-        <span style={{ width: "50px", lineHeight: "30px" }}>{t("密码")}:</span>
+        <span style={{ width: "50px", lineHeight: "30px" }}>
+          {t("Password")}:
+        </span>
         <span className="lanzou-download-option">1234</span>
       </div>
 

@@ -12,10 +12,10 @@ const Ready = ({ t }) => (
       <div className="row section-title justify-content-center text-center">
         <div className="col-md-12 col-lg-10 col-xl-9">
           <h3 className="question aos-init" data-aos="fade-up">
-            {t("还在等什么？")}
+            {t("Ready to get started ?")}
           </h3>
           <div className="ads aos-init" data-aos="fade-up" data-aos-delay="50">
-            {t("快使用 Koodo Reader 管理你的电子书吧！")}
+            {t("All your books in one place, organized and safely stored")}
           </div>
         </div>
         <div
@@ -23,10 +23,10 @@ const Ready = ({ t }) => (
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <div className="row justify-content-center mt-3 ready-button">
+          <div className="row justify-content-center mt-3 ready-button align-items-center">
             <Link href="/download">
               <div className="row download-button m-2 justify-content-center align-items-center">
-                <div>{t("下载")}</div>
+                <div>{t("Download")}</div>
               </div>
             </Link>
 
@@ -37,7 +37,7 @@ const Ready = ({ t }) => (
                 rel="noopener noreferrer"
               >
                 <div>
-                  {t("网页版")}
+                  {t("Demo")}
                   <svg className="icon ml-2" aria-hidden="true">
                     <use href="#icon-qianjin"></use>
                   </svg>
@@ -87,7 +87,7 @@ const Ready = ({ t }) => (
       }
       .ready-button {
         width: 200px;
-        margin-left: calc(50% - 110px);
+        margin-left: calc(50% - 100px);
         z-index: 10;
       }
       .preview-button {

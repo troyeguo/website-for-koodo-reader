@@ -1,19 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withTranslation } from "../i18n";
+import { NextSeo } from "next-seo";
 import Header from "../components/header";
 import Footer from "../components/footer";
 const Support = ({ t }) => {
   return (
     <div>
+      <NextSeo
+        title="Support"
+        description="You can contact the developer through the following methods"
+      />
       <Header />
       <section className="bg-dynamic pb-5">
         <div className="container mt-4">
           <div className="row mt-5 justify-content-center">
             <div className="col-md-9 col-lg-8 col-xl-7">
-              <h1 className="page-title">{t("客户支持")}</h1>
+              <h1 className="page-title">{t("Support")}</h1>
               <p className="page-subtitle">
-                {t("您可以通过以下方式与开发者取得联系")}
+                {t(
+                  "You can contact the developer through the following methods"
+                )}
               </p>
             </div>
           </div>
@@ -29,10 +36,10 @@ const Support = ({ t }) => {
                   </svg>
                 </div>
                 <div className="col-10">
-                  <div className=" feedback-title">{t("反馈")}</div>
+                  <div className=" feedback-title">{t("Feedback")}</div>
                   <div className="feedback-subtitle">
                     {t(
-                      "对于问题咨询，功能改进和 bug 反馈，请前往本项目在github上的issue区提交。"
+                      "For general inquiries, bug reports or feature requests, please open an issue on our github page"
                     )}
                   </div>
                   <a
@@ -40,7 +47,7 @@ const Support = ({ t }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="form-link mt-2">{t("点我前往")}</div>
+                    <div className="form-link mt-2">{t("Click Me")}</div>
                   </a>
                 </div>
               </div>
@@ -51,10 +58,11 @@ const Support = ({ t }) => {
                   </svg>
                 </div>
                 <div className="col-10">
-                  <div className="feedback-title">{t("邮箱")}</div>
+                  <div className="feedback-title">{t("Email to us")}</div>
                   <div className="feedback-subtitle">
-                    {t("您也可以直接通过邮箱")}&nbsp; guo362429@gmail.com &nbsp;
-                    {t("与开发者取得联系。")}
+                    {t("Any other questions? Drop us a line to")}&nbsp;
+                    guo362429@gmail.com &nbsp;
+                    {t("and we’ll get in touch with you soon.")}
                   </div>
                 </div>
               </div>

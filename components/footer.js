@@ -16,7 +16,7 @@ const Footer = ({ t }) => (
       <div style={{ position: "relative", bottom: "15px" }}>
         <a className="link">
           {t(
-            "Koodo Reader 是一个开源的电子书阅读器，支持 epub、pdf、mobi、azw3和txt"
+            "Koodo Reader is an open-source eBook reader for epub, pdf, mobi, azw3 and txt"
           )}
         </a>
       </div>
@@ -26,21 +26,21 @@ const Footer = ({ t }) => (
       style={{ textAlign: "center" }}
     >
       <div>
-        <a className="link-id">{t("产品信息")}</a>
+        <a className="link-id">{t("Product")}</a>
       </div>
       <Link href="/faq">
         <div>
-          <a className="link">{t("常见问题")}</a>
+          <a className="link">{t("FAQ")}</a>
         </div>
       </Link>
       <Link href="/log">
         <div>
-          <a className="link">{t("更新日志")}</a>
+          <a className="link">{t("Changelog")}</a>
         </div>
       </Link>
       <Link href="/download">
         <div>
-          <a className="link">{t("下载")}</a>
+          <a className="link">{t("Download")}</a>
         </div>
       </Link>
     </div>
@@ -50,21 +50,21 @@ const Footer = ({ t }) => (
       style={{ textAlign: "center" }}
     >
       <div>
-        <a className="link-id">{t("用户条款")}</a>
+        <a className="link-id">{t("Customer")}</a>
       </div>
       <Link href="/privacy">
         <div>
-          <a className="link">{t("隐私策略")}</a>
+          <a className="link">{t("Privacy")}</a>
         </div>
       </Link>
       <Link href="/terms">
         <div>
-          <a className="link">{t("服务条款")}</a>
+          <a className="link">{t("Terms")}</a>
         </div>
       </Link>
       <Link href="/support">
         <div>
-          <a className="link">{t("客户支持")}</a>
+          <a className="link">{t("Support")}</a>
         </div>
       </Link>
     </div>
@@ -74,7 +74,7 @@ const Footer = ({ t }) => (
       style={{ textAlign: "center" }}
     >
       <div>
-        <a className="link-id">{t("资源下载")}</a>
+        <a className="link-id">{t("Resource")}</a>
       </div>
       <div>
         <a
@@ -122,7 +122,7 @@ const Footer = ({ t }) => (
       style={{ textAlign: "center" }}
     >
       <div>
-        <a className="link-id">{t("同类产品")}</a>
+        <a className="link-id">{t("Couterpart")}</a>
       </div>
       <div>
         <a
@@ -170,7 +170,7 @@ const Footer = ({ t }) => (
       style={{ textAlign: "center" }}
     >
       <div>
-        <a className="link-id">{t("开发者信息")}</a>
+        <a className="link-id">{t("Developer")}</a>
       </div>
       <div>
         <a
@@ -179,7 +179,7 @@ const Footer = ({ t }) => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          {t("个人博客")}
+          {t("Profolio")}
         </a>
       </div>
       <div>

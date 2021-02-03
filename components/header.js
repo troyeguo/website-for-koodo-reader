@@ -8,39 +8,25 @@ const Header = ({ t, router }) => {
   const routeName = router.pathname;
   const [collapse, setCollapse] = useState(true);
   useEffect(() => {
-    var scrollFunc = function (e) {
-      e = e || window.event;
-      if (e.wheelDelta) {
-        let offsetHeight =
-          document.body.scrollTop || document.documentElement.scrollTop;
-        if (offsetHeight > 150) {
-          setTheme("light");
-        } else {
-          setTheme("dark");
-        }
-      } else if (e.detail) {
-        //Firefox滑轮事件
-        let offsetHeight =
-          document.body.scrollTop || document.documentElement.scrollTop;
-        console.log(offsetHeight);
-        if (offsetHeight > 150) {
-          setTimeout(() => {
-            setTheme("light");
-          }, 500);
-        } else {
-          setTimeout(() => {
-            setTheme("dark");
-          }, 500);
-        }
+    var scrollFunc = function () {
+      let offsetHeight =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      if (offsetHeight > 150) {
+        setTheme("light");
+      } else {
+        setTheme("dark");
       }
     };
-    //给页面绑定滑轮滚动事件
-    if (document.addEventListener) {
-      //firefox
-      document.addEventListener("DOMMouseScroll", scrollFunc, false);
-    }
+    setInterval((event) => {
+      scrollFunc(event);
+    }, 500);
+    // //给页面绑定滑轮滚动事件
+    // if (document.addEventListener) {
+    //   //firefox
+    //   document.addEventListener("DOMMouseScroll", scrollFunc, false);
+    // }
     //滚动滑轮触发scrollFunc方法 //ie 谷歌
-    window.onmousewheel = document.onmousewheel = scrollFunc;
+    // window.onmousewheel = document.onmousewheel = scrollFunc;
   }, []);
   return (
     <div
@@ -109,7 +95,7 @@ const Header = ({ t, router }) => {
                         }
                       >
                         <div>
-                          <a>{t("下载")}</a>
+                          <a>{t("Download")}</a>
                         </div>
                       </div>
                     </Link>
@@ -172,7 +158,7 @@ const Header = ({ t, router }) => {
           .icon-more {
             font-size: 30px;
             position: absolute;
-            top: 10px;
+            top: 15px;
             right: 10px;
             margin-top: 0px;
           }

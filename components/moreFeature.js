@@ -26,7 +26,7 @@ const MoreFeature = ({ t }) => {
   };
   return (
     <section className="container my-lg-5">
-      <div className="more-question">{t("更多")}</div>
+      <div className="more-question">{t("What's more?")}</div>
       <div className="row text-center">{renderFeature()}</div>
       <div className="row justify-content-center">
         <div
@@ -44,7 +44,7 @@ const MoreFeature = ({ t }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t("了解更多")}
+              {t("Learn more")}
               <svg className="icon ml-2" aria-hidden="true">
                 <use href="#icon-qianjin"></use>
               </svg>
@@ -66,11 +66,11 @@ const MoreFeature = ({ t }) => {
           margin: 10px 0px;
         }
         .more-subtitle {
-          font-size: 1rem;
+          font-size: 0.9rem;
           font-weight: 500;
           line-height: 18px;
           color: rgba(85, 90, 100, 1);
-          opacity: 1;
+          opacity: 0.7;
         }
         .more-question {
           font-size: calc(1rem + 1.8vw);

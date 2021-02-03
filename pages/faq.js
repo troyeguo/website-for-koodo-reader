@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withTranslation } from "../i18n";
+import { NextSeo } from "next-seo";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import { aboutInfo } from "../configs/faq";
@@ -36,14 +37,18 @@ const FAQ = ({ t }) => {
   };
   return (
     <div>
+      <NextSeo
+        title="FAQ"
+        description="commonly asked questions about Koodo Reader"
+      />
       <Header />
       <section className="bg-dynamic pb-5">
         <div className="container mt-4">
           <div className="row section-title justify-content-center text-center">
             <div className="col-md-9 col-lg-8 col-xl-7">
-              <h1 className="page-title">{t("常见问题")}</h1>
+              <h1 className="page-title">{t("FAQ")}</h1>
               <p className="page-subtitle">
-                {t("关于 Koodo Reader 您可能关心的东西")}
+                {t("What you probably wonder about Koodo Reader?")}
               </p>
             </div>
           </div>

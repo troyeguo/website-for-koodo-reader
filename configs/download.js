@@ -22,7 +22,7 @@ const downloadOptions = [
   {
     id: 4,
     icon: "windows",
-    title: "便携版",
+    title: "Portable",
     url: `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}-Portable.exe`,
   },
 ];
