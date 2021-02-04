@@ -9,14 +9,14 @@
 
 ### Technique Stacks
 
-- **Next.js**
-- **Bootstrap**
-- **next-i18next**
-- **aos**
+- Next.js
+- Bootstrap
+- next-i18next
+- aos
 
 ### Live Preview
 
-[Click](https://koodo.960960.xyz)
+[Click to go](https://koodo.960960.xyz)
 
 ### Develop
 
