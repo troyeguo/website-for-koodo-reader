@@ -7,7 +7,7 @@
 <img src="https://i.loli.net/2020/05/24/DtfnCZb91EsVNyv.png">
 <img src="https://i.loli.net/2020/07/10/U42KtBfmTjPMCOH.png">
 
-### Technique Stacks
+### Technologies Stack
 
 - Next.js
 - Bootstrap
