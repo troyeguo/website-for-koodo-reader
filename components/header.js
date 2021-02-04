@@ -20,13 +20,6 @@ const Header = ({ t, router }) => {
     setInterval((event) => {
       scrollFunc(event);
     }, 500);
-    // //给页面绑定滑轮滚动事件
-    // if (document.addEventListener) {
-    //   //firefox
-    //   document.addEventListener("DOMMouseScroll", scrollFunc, false);
-    // }
-    //滚动滑轮触发scrollFunc方法 //ie 谷歌
-    // window.onmousewheel = document.onmousewheel = scrollFunc;
   }, []);
   return (
     <div

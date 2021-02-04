@@ -260,6 +260,11 @@ const Footer = ({ t }) => (
         color: black;
         line-height: 40px;
       }
+      @media (max-width: 768px) {
+        .link {
+          text-align: center;
+        }
+      }
     `}</style>
   </section>
 );

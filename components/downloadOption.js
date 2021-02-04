@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import downloadOptions from "../configs/download";
 import { withTranslation } from "../i18n";
@@ -20,6 +20,13 @@ const DownloadDemo = ({ t }) => {
     }
     window.open(url);
   };
+  useEffect(() => {
+    if (navigator.language !== "zh-CN") {
+      document
+        .getElementsByClassName("lanzou-download-title")[0]
+        .setAttribute("style", "display:none");
+    }
+  }, []);
   const renderDownload = () => {
     return downloadOptions.map((item) => {
       return (

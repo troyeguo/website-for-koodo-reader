@@ -62,7 +62,7 @@ const Support = ({ t }) => {
                   <div className="feedback-subtitle">
                     {t("Any other questions? Drop us a line to")}&nbsp;
                     guo362429@gmail.com &nbsp;
-                    {t("and we’ll get in touch with you soon.")}
+                    {t("and we’ll get in touch with you soon")}
                   </div>
                 </div>
               </div>
