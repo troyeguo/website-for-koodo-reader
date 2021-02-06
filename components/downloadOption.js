@@ -23,7 +23,7 @@ const DownloadDemo = ({ t }) => {
   useEffect(() => {
     if (navigator.language !== "zh-CN") {
       document
-        .getElementsByClassName("lanzou-download-title")[0]
+        .getElementsByClassName("lanzou-download-option")[0]
         .setAttribute("style", "display:none");
     }
   }, []);
@@ -70,25 +70,26 @@ const DownloadDemo = ({ t }) => {
   return (
     <div className="container">
       <div className="row justify-content-around">{renderDownload()}</div>
+      <div className="lanzou-download-option">
+        <div className="lanzou-download-title">
+          {t("Download option for Chinese users")}
+        </div>
+        <div className="lanzou-download-container">
+          <a
+            href="https://wwa.lanzous.com/b0c90cieb"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="lanzou-download-option">
+              https://wwa.lanzous.com/b0c90cieb
+            </span>
+          </a>
 
-      <div className="lanzou-download-title">
-        {t("Download option for Chinese users")}
-      </div>
-      <div className="lanzou-download-container">
-        <a
-          href="https://wwa.lanzous.com/b0c90cieb"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="lanzou-download-option">
-            https://wwa.lanzous.com/b0c90cieb
+          <span style={{ width: "50px", lineHeight: "30px" }}>
+            {t("Password")}:
           </span>
-        </a>
-
-        <span style={{ width: "50px", lineHeight: "30px" }}>
-          {t("Password")}:
-        </span>
-        <span className="lanzou-download-option">1234</span>
+          <span className="lanzou-download-option">1234</span>
+        </div>
       </div>
 
       <style global jsx>{`
