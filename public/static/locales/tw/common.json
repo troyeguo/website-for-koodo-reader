@@ -27,13 +27,7 @@
   "FAQ": "常見問題",
   "Home": "首頁",
   "What you probably wonder about Koodo Reader?": "關於 Koodo Reader 您可能關心的東西",
-  "How was Koodo Reader born?": "Koodo Reader 是怎麽誕生的？",
-  "Koodo Reader was born in 2020 spring during the pandemic as a personal demo project which is actively developed only because the support from the whole community": "Koodo Reader 誕生於2020年春，最初只是開發者的個人練手項目，後來逐漸得到越來越多人的關註，才有動力不斷更新下去",
-  "How do I contact you?": "我要如何聯系妳？",
-  "Software crashed when the imported book is too large": "電子書體積較大時，為什麽會出現卡頓？",
-  "We recommand you not importing epub, azw3, mobi, pdf files larger than 100M, txt files larger than 4M": "建議您導入的epub，azw3，mobi，pdf文件體積不要超過100M，txt文件體積不要超過4M。",
-  "Software freezes on splash screen when running on Windows 7": "Windows 7 上卡在加載頁面怎麽辦？",
-  "Koodo Reader don't support Windows 7 yet, the reason is under investigation, you can use web version instead": "目前 Koodo Reader 還不支持 Windows 7系統，出現這個問題原因也未知，您可以使用網頁版替代",
+
   "Changelog": "更新日誌",
   "What's new about each version of Koodo Reader": "每個版本 Koodo Reader 的更新日誌",
   "Donate": "捐贈",
@@ -67,5 +61,14 @@
   "Koodo Reader runs on Windows, macOS, Linux, Web": "Koodo Reader 支持 Windows、macOS、Linux 和網頁版",
   "Never Lose Data": "備份與恢復",
   "Save your data  to Dropbox and Webdav": "使用您喜歡的網盤備份您的數據或保存到本地存儲",
-  "Profolio": "個人博客"
+  "Profolio": "個人博客",
+  "How was Koodo Reader born?": "Koodo Reader 是怎麽誕生的？",
+  "Koodo Reader was born in 2020 spring during the pandemic, which starts as a personal demo project,and gradually become more powerful with more feature requested from the whole dev community": "Koodo Reader 誕生於2020年春，最初只是開發者的個人練手項目，後來逐漸得到越來越多人的關註，才有動力不斷更新下去",
+  "How sync works": "同步是如何實現的？",
+  "Sync only works with desktop version, you need to change your storage path to the path of your drive folder, and turn on sync function in the setting, Everytime you launch Koodo Reader, data from your drive folder will be automatically loaded to Koodo Reader": "同步僅客戶端支持，您需要在設置中把數據存儲位置改為您在本地的網盤同步目錄，並開啟同步功能，這樣每次軟件啟動時，會自動從該文件夾同步數據到 Koodo Reader中，您的每次退出閱讀，添加圖書，恢復數據時，Koodo Reader 又會把本地的數據同步到您的網盤同步目錄",
+  "Software crashed when the imported book is too large": "圖書太大的話，打開圖書時會出現卡頓",
+  "if the chapter-analysing algorithm fails to detect the chapter title in your book, the text in a single chapter could be very large, causing crash when you open the book": "這種情況壹般出現在mobi，azw3，txt格式的電子書上，Koodo Reader在導入這些格式的電子書時，會使用分章算法對電子書進行處理，如果分章算法無法識別某個章節，就會導致這壹張章的文字過多，從而解析時出現卡頓。希望您可以將該電子書提交給我們，用於改進分章算法。",
+  "How Backup and Restore work": "備份和恢復是如何實現的？",
+  "Koodo Reader will package all your data including your books and other personal data into a zip file named with the date, and upload to your drive, for Dropbox, data stores in /Apps/KoodoReader, for Webdav, data stores in /KoodoReader": "備份時，Koodo Reader 會將您的所有的數據包括圖書和其他個人數據打包成壹個壓縮包，上傳到您的網盤中，壓縮包的文件名為當天的日期。Dropbox的存儲目錄為/Apps/KoodoReader,Webdav的存儲目錄為/KoodoReader，恢復則為從該目錄讀取上次備份的數據並恢復到本地。",
+  "Download the latest version of": "下載最新版本："
 }

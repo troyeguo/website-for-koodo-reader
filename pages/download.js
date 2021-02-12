@@ -6,6 +6,8 @@ import Footer from "../components/footer";
 import DownloadOption from "../components/downloadOption";
 import Share from "../components/share";
 import { NextSeo } from "next-seo";
+const changeLogs = require("../configs/logs");
+const version = changeLogs[0].version;
 
 const Homepage = ({ t }) => (
   <React.Fragment>
@@ -14,7 +16,10 @@ const Homepage = ({ t }) => (
     <div className="container">
       <section className="row justify-content-center demo-container">
         <div>
-          <div className="demo-title my-5">Koodo Reader</div>
+          <div className="demo-title mt-5 mb-3">Koodo Reader</div>
+          <div className="lanzou-download-title" style={{ fontWeight: "500" }}>
+            {t("Download the latest version of") + " " + version}
+          </div>
           <img
             src="/images/demo.png"
             alt="Koodo Reader demo"

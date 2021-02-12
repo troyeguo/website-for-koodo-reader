@@ -6,25 +6,25 @@ export const aboutInfo = [
     color2: "#FFD547",
     question: "How was Koodo Reader born?",
     answer:
-      "Koodo Reader was born in 2020 spring during the pandemic as a personal demo project which is actively developed only because the support from the whole community",
+      "Koodo Reader was born in 2020 spring during the pandemic, which starts as a personal demo project,and gradually become more powerful with more feature requested from the whole dev community",
   },
   {
     id: 2,
     icon: "zu54",
     color1: "#1D2FFD",
     color2: "#3282FA",
-    question: "Software crashed when the imported book is too large",
+    question: "How sync works",
     answer:
-      "We recommand you not importing epub, azw3, mobi, pdf files larger than 100M, txt files larger than 4M",
+      "Sync only works with desktop version, you need to change your storage path to the path of your drive folder, and turn on sync function in the setting, Everytime you launch Koodo Reader, data from your drive folder will be automatically loaded to Koodo Reader",
   },
   {
     id: 3,
     icon: "sync",
     color1: "#FF5050",
     color2: "#D83BE2",
-    question: "Software freezes on splash screen when running on Windows 7",
+    question: "Software crashed when the imported book is too large",
     answer:
-      "Koodo Reader don't support Windows 7 yet, the reason is under investigation, you can use web version instead",
+      "if the chapter-analysing algorithm fails to detect the chapter title in your book, the text in a single chapter could be very large, causing crash when you open the book",
   },
 
   {
@@ -32,8 +32,8 @@ export const aboutInfo = [
     icon: "zu57",
     color1: "#24C4CC",
     color2: "#4AC22A",
-    question: "How do I contact you?",
+    question: "How Backup and Restore work",
     answer:
-      "对于问题咨询，功能改进和 bug 反馈请点击网站顶部的客户支持页面，与开发者取得联系",
+      "Koodo Reader will package all your data including your books and other personal data into a zip file named with the date, and upload to your drive, for Dropbox, data stores in /Apps/KoodoReader, for Webdav, data stores in /KoodoReader",
   },
 ];

@@ -26,14 +26,6 @@
   "Click Me": "Click Me",
   "FAQ": "FAQ",
   "What you probably wonder about Koodo Reader?": "What you probably wonder about Koodo Reader?",
-  "How was Koodo Reader born?": "How was Koodo Reader born?",
-  "Koodo Reader was born in 2020 spring during the pandemic as a personal demo project which is actively developed only because the support from the whole community": "Koodo Reader was born in 2020 spring during the pandemic as a personal demo project which is actively developed only because the support from the whole community",
-  "Why download speed is so slow?": "Why download speed is so slow?",
-  "If you're in mainland China, your connection to Github will be servely interfered by GFW, causing unstable download speed.": "If you're in mainland China, your connection to Github will be servely interfered by GFW, causing unstable download speed.",
-  "如何备份和恢复数据？": "How to backup and restore data?",
-  "点击右上角的 “备份和恢复” 按钮按照提示一步步操作就可以了，备份的文件以 zip 的形式保存，文件名为备份日期。": "To backup and restore data, just click the Backup and Restore button in the top-right corner and follow the instruction",
-  "How do I contact you?": "How do I contact you?",
-  "对于问题咨询，功能改进和 bug 反馈请点击网站顶部的客户支持页面，与开发者取得联系": "For general inquiries, suggesting new features and improvements, or to report bugs, visit the support page.",
   "Changelog": "Changelog",
   "What's new about each version of Koodo Reader": "What's new about each version of Koodo Reader",
   "Donate": "Donate",
@@ -68,9 +60,14 @@
   "Koodo Reader runs on Windows, macOS, Linux, Web": "Koodo Reader runs on Windows, macOS, Linux, Web",
   "Never Lose Data": "Never Lose Data",
   "Save your data  to Dropbox and Webdav": "Save your data  to Dropbox and Webdav",
+
+  "Profolio": "Profolio",
+  "How was Koodo Reader born?": "How was Koodo Reader born?",
+  "Koodo Reader was born in 2020 spring during the pandemic, which starts as a personal demo project,and gradually become more powerful with more feature requested from the whole dev community": "Koodo Reader was born in 2020 spring during the pandemic, which starts as a personal demo project,and gradually become more powerful with more feature requested from the whole dev community",
+  "How sync works": "How sync works",
+  "Sync only works with desktop version, you need to change your storage path to the path of your drive folder, and turn on sync function in the setting, Everytime you launch Koodo Reader, data from your drive folder will be automatically loaded to Koodo Reader": "Sync only works with desktop version, you need to change your storage path to the path of your drive folder, and turn on sync function in the setting. Everytime you launch Koodo Reader, data from your drive folder will be automatically loaded to Koodo Reader.",
   "Software crashed when the imported book is too large": "Software crashed when the imported book is too large",
-  "We recommand you not importing epub, azw3, mobi, pdf files larger than 100M, txt files larger than 4M": "We recommand you not importing epub, azw3, mobi, pdf files larger than 100M, txt files larger than 4M",
-  "Software freezes on splash screen when running on Windows 7": "Software freezes on splash screen when running on Windows 7",
-  "Koodo Reader don't support Windows 7 yet, the reason is under investigation, you can use web version instead": "Koodo Reader don't support Windows 7 yet, the reason is under investigation, you can use web version instead",
-  "Profolio": "Profolio"
+  "if the chapter-analysing algorithm fails to detect the chapter title in your book, the text in a single chapter could be very large, causing crash when you open the book": "if the chapter-analysing algorithm fails to detect the chapter title in your book, the text in a single chapter could be very large, causing crash when you open the book",
+  "How Backup and Restore work": "How Backup and Restore work",
+  "Koodo Reader will package all your data including your books and other personal data into a zip file named with the date, and upload to your drive, for Dropbox, data stores in /Apps/KoodoReader, for Webdav, data stores in /KoodoReader": "Koodo Reader will package all your data including your books and other personal data into a zip file named with the date, and upload to your drive, for Dropbox, data stores in /Apps/KoodoReader, for Webdav, data stores in /KoodoReader."
 }

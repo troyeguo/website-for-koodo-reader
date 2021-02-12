@@ -9,15 +9,6 @@ const DownloadDemo = ({ t }) => {
       alert(t("Please download this app on PC"));
       return;
     }
-
-    if (
-      navigator.appVersion.indexOf("NT 6.1") > -1 ||
-      navigator.appVersion.indexOf("NT 5.1") > -1 ||
-      navigator.appVersion.indexOf("NT 6.0") > -1
-    ) {
-      alert(t("暂不支持您的系统"));
-      return;
-    }
     window.open(url);
   };
   useEffect(() => {
