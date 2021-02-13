@@ -4,7 +4,7 @@ import { withTranslation, Link } from "../i18n";
 const Cover = ({ t }) => (
   <div className="container-fluid cover-container" style={{ padding: 0 }}>
     <div className="cover-bg">
-      <img src="/images/cover.svg" alt="Koodo Reader Cover" className="cover" />
+      <img src="/images/cover.png" alt="Koodo Reader Cover" className="cover" />
       <section className="bg-dark">
         <div className="container" style={{ height: "100%" }}>
           <div
@@ -101,7 +101,7 @@ const Cover = ({ t }) => (
         .cover-container {
           height: 80vh;
           width:100%;
-          background:url('/images/cover.svg');
+          background:url('/images/cover.png');
           margin-bottom:20px;
           background-position: 52% 75%;
         }
