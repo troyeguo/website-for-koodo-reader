@@ -99,7 +99,7 @@ const Cover = ({ t }) => (
           line-height: 1.5;
         }
         .cover-container {
-          height: 80vh;
+          height: 600px;
           width:100%;
           background:url('/images/cover.png');
           margin-bottom:20px;
