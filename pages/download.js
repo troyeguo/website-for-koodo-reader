@@ -21,7 +21,14 @@ const Homepage = ({ t }) => (
             {t("Download the latest version of") + " " + version}
           </div>
           <img
-            src="/images/demo.png"
+            src={
+              navigator.language === "zh-CN" ||
+              navigator.language === "zh-SG" ||
+              navigator.language === "zh-TW" ||
+              navigator.language === "zh-HK"
+                ? "/images/demo.png"
+                : "/images/demo_en.png"
+            }
             alt="Koodo Reader demo"
             className="demo aos-init"
             data-aos="fade-up"
