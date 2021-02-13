@@ -103,7 +103,7 @@ const Cover = ({ t }) => (
           width:100%;
           background:url('/images/cover.png');
           margin-bottom:20px;
-          background-position: 52% 75%;
+          background-position: 50% 75%;
         }
         .cover {
           display:none
