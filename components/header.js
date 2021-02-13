@@ -19,7 +19,7 @@ const Header = ({ t, router }) => {
     };
     setInterval((event) => {
       scrollFunc(event);
-    }, 500);
+    }, 200);
   }, []);
   return (
     <div
