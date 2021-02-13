@@ -69,5 +69,6 @@
   "Software crashed when the imported book is too large": "Software crashed when the imported book is too large",
   "if the chapter-analysing algorithm fails to detect the chapter title in your book, the text in a single chapter could be very large, causing crash when you open the book": "if the chapter-analysing algorithm fails to detect the chapter title in your book, the text in a single chapter could be very large, causing crash when you open the book",
   "How Backup and Restore work": "How Backup and Restore work",
-  "Koodo Reader will package all your data including your books and other personal data into a zip file named with the date, and upload to your drive, for Dropbox, data stores in /Apps/KoodoReader, for Webdav, data stores in /KoodoReader": "Koodo Reader will package all your data including your books and other personal data into a zip file named with the date, and upload to your drive, for Dropbox, data stores in /Apps/KoodoReader, for Webdav, data stores in /KoodoReader."
+  "Koodo Reader will package all your data including your books and other personal data into a zip file named with the date, and upload to your drive, for Dropbox, data stores in /Apps/KoodoReader, for Webdav, data stores in /KoodoReader": "Koodo Reader will package all your data including your books and other personal data into a zip file named with the date, and upload to your drive, for Dropbox, data stores in /Apps/KoodoReader, for Webdav, data stores in /KoodoReader.",
+  "Download the latest version of": "Download the latest version of"
 }
