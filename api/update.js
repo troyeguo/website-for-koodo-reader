@@ -6,7 +6,7 @@ module.exports = (req, res) => {
   const {
     query: { name },
   } = req;
-  res.status(404).send({
+  res.status(200).send({
     download: download,
     log:
       name === "zh-CN" || name === "zh-SG"

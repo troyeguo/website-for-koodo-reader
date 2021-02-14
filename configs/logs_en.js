@@ -1,6 +1,32 @@
 const changeLogs = [
   {
     date: "2021.2.12",
+    version: "1.2.2",
+    new: [
+      "Emergency Fix for the white screen bug in some devices",
+      "Add support for changing storage location",
+      "Auto syncing among multiple devices, checkout faq for more instructions",
+      "Cover mode for book view",
+      "Add support to Windows 7",
+      "Lock the panel on the left and right side of the reader",
+      "UI optimization",
+      "improvement on Chapter-analysing algorithm",
+      "Add support for boldening text",
+      "Cancel Bookmarks tab",
+      "Increase the scale range of the single page",
+      "Add support for revoking authorization of drive",
+    ],
+    fix: [
+      "Fix the bug of unable to delete notes and digests",
+      "Fix the bug of loading animation",
+      "Fix the bug of open-url dialog",
+      "Fix the bug of book title and book type",
+      "Fix the bug of fullscreen",
+      "Having a happy Chinese new year",
+    ],
+  },
+  {
+    date: "2021.2.12",
     version: "1.2.1",
     new: [
       "Add support for changing storage location",
@@ -12,6 +38,7 @@ const changeLogs = [
       "improvement on Chapter-analysing algorithm",
       "Add support for boldening text",
       "Cancel Bookmarks tab",
+      "Increase the scale range of the single page",
       "Add support for revoking authorization of drive",
     ],
     fix: [
