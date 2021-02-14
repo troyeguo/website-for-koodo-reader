@@ -1,7 +1,7 @@
 const changeLogs = [
   {
     date: "2021.2.12",
-    version: "1.2.0",
+    version: "1.2.1",
     new: [
       "Add support for changing storage location",
       "Auto syncing among multiple devices, checkout faq for more instructions",
