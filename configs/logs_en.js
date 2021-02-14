@@ -3,8 +3,10 @@ const changeLogs = [
     date: "2021.2.12",
     version: "1.2.2",
     new: [
-      "Emergency Fix for the white screen bug in some devices",
+      "This is an emrgency update 1.2.2, Fix for the white screen bug in some devices",
+      "The following changelog is originally from 1.2.1",
       "Add support for changing storage location",
+      "Emergency ",
       "Auto syncing among multiple devices, checkout faq for more instructions",
       "Cover mode for book view",
       "Add support to Windows 7",
