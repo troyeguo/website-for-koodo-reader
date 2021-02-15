@@ -65,7 +65,7 @@
   "How was Koodo Reader born?": "Koodo Reader 是怎麽誕生的？",
   "Koodo Reader was born in 2020 spring during the pandemic, which starts as a personal demo project,and gradually become more powerful with more feature requested from the whole dev community": "Koodo Reader 誕生於2020年春，最初只是開發者的個人練手項目，後來逐漸得到越來越多人的關註，才有動力不斷更新下去",
   "How sync works": "同步是如何實現的？",
-  "Sync only works with desktop version, you need to change your storage path to the path of your drive folder, and turn on sync function in the setting, Everytime you launch Koodo Reader, data from your drive folder will be automatically loaded to Koodo Reader": "同步僅客戶端支持，您需要在設置中把數據存儲位置改為您在本地的網盤同步目錄，並開啟同步功能，這樣每次軟件啟動時，會自動從該文件夾同步數據到 Koodo Reader中，您的每次退出閱讀，添加圖書，恢復數據時，Koodo Reader 又會把本地的數據同步到您的網盤同步目錄",
+  "Sync only works with desktop version, you need to change your storage path to the path of your drive folder, and turn on sync function in the setting, Everytime you launch Koodo Reader, data from your drive folder will be automatically loaded to Koodo Reader": "同步僅客戶端支持，您需要在設置中把數據存儲位置改為您在本地的網盤同步目錄，並開啟從存儲位置同步功能，這樣每次軟件啟動時，會自動從該文件夾同步數據到 Koodo Reader中，您的每次退出閱讀，添加圖書，恢復數據時，Koodo Reader 又會把本地的數據同步到您的網盤同步目錄",
   "Software crashed when the imported book is too large": "圖書太大的話，打開圖書時會出現卡頓",
   "if the chapter-analysing algorithm fails to detect the chapter title in your book, the text in a single chapter could be very large, causing crash when you open the book": "這種情況壹般出現在mobi，azw3，txt格式的電子書上，Koodo Reader在導入這些格式的電子書時，會使用分章算法對電子書進行處理，如果分章算法無法識別某個章節，就會導致這壹張章的文字過多，從而解析時出現卡頓。希望您可以將該電子書提交給我們，用於改進分章算法。",
   "How Backup and Restore work": "備份和恢復是如何實現的？",
