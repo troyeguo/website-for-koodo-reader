@@ -5,12 +5,11 @@ import { withTranslation, Link } from "../i18n";
 
 const Footer = ({ t }) => (
   <section className="row justify-content-around footer-text m-0 pt-4">
-    <div className="col-12 col-md-4 align-items-baseline mb-2">
+    <div className="col-12 col-md-4 align-items-baseline mb-2 footer-logo">
       <a>
         <svg className="icon icon-black" aria-hidden="true">
           <use href="#icon-zu48"></use>
         </svg>
-
         <span className="header-name">Koodo Reader</span>
       </a>
       <div style={{ position: "relative", bottom: "15px" }}>
@@ -262,6 +261,9 @@ const Footer = ({ t }) => (
       }
       @media (max-width: 768px) {
         .link {
+          text-align: center;
+        }
+        .footer-logo {
           text-align: center;
         }
       }

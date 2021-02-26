@@ -29,13 +29,13 @@ const Support = ({ t }) => {
             data-aos="fade-up"
           >
             <div>
-              <div className="row mt-4 justify-content-start mr-0 ml-0">
+              <div className="row mt-4 justify-content-center mr-0 ml-0">
                 <div className="col-2 pr-0 row justify-content-center">
                   <svg className="icon form-icon" aria-hidden="true">
                     <use href={`#icon-zu59`}></use>
                   </svg>
                 </div>
-                <div className="col-10">
+                <div className="col-10 col-sm-8">
                   <div className=" feedback-title">{t("Feedback")}</div>
                   <div className="feedback-subtitle">
                     {t(
@@ -51,13 +51,13 @@ const Support = ({ t }) => {
                   </a>
                 </div>
               </div>
-              <div className="row  mt-4 justify-content-start  mr-0 ml-0">
+              <div className="row  mt-4 justify-content-center  mr-0 ml-0">
                 <div className="col-2 pr-0 row justify-content-center">
                   <svg className="icon form-icon" aria-hidden="true">
                     <use href={`#icon-zu60`}></use>
                   </svg>
                 </div>
-                <div className="col-10">
+                <div className="col-10 col-sm-8">
                   <div className="feedback-title">{t("Email to us")}</div>
                   <div className="feedback-subtitle">
                     {t("Any other questions? Drop us a line to")}&nbsp;

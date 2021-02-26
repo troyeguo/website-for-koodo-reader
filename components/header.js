@@ -3,11 +3,15 @@ import PropTypes from "prop-types";
 import { withRouter } from "next/router";
 import { Link, withTranslation } from "../i18n";
 import HeaderOption from "./headerOption";
+import { isMobile } from "react-device-detect";
 const Header = ({ t, router }) => {
   const [theme, setTheme] = useState("dark");
   const routeName = router.pathname;
   const [collapse, setCollapse] = useState(true);
   useEffect(() => {
+    if (isMobile) {
+      return;
+    }
     var scrollFunc = function () {
       let offsetHeight =
         document.body.scrollTop || document.documentElement.scrollTop;
@@ -17,6 +21,7 @@ const Header = ({ t, router }) => {
         setTheme("dark");
       }
     };
+
     setInterval((event) => {
       scrollFunc(event);
     }, 200);
