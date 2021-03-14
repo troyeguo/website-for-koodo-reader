@@ -8,8 +8,10 @@ const Support = ({ t }) => {
   return (
     <div>
       <NextSeo
-        title="Support"
-        description="You can contact the developer through the following methods"
+        title={t("Support")}
+        description={t(
+          "You can contact the developer through the following methods"
+        )}
       />
       <Header />
       <section className="bg-dynamic pb-5">

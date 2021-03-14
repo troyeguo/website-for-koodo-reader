@@ -1,5 +1,29 @@
 const changeLogs = [
   {
+    date: "2021.3.14",
+    version: "1.2.3",
+    new: [
+      "Collapse sidebar to leave more space for books",
+      "Change voice and speed of text-to-speech",
+      "Add Russian translation, special thanks to vanja-san",
+      "Installation by Docker, special thanks to yanickxia",
+      "Add my shelves to book menu",
+      "Set Koodo Reader as the default opening option for your books on Windows",
+      "Adjust letter spacing",
+      "Customize page scale",
+      "Remember the window's size and position from last read",
+      "Open multiple Koodo Reader at the same time",
+      "Optimization for chapter analysis",
+      "Optimization for UI",
+    ],
+    fix: [
+      "Deleting books in Trash will throughly delete their notes and digests",
+      "Fix the search issue when the searched text contains capital letter",
+      "Fix the icon issue on macOS",
+      "Fix the text-to-speech issue",
+    ],
+  },
+  {
     date: "2021.2.12",
     version: "1.2.2",
     new: [

@@ -70,8 +70,8 @@ const Log = ({ t }) => {
   return (
     <div>
       <NextSeo
-        title="Changelog"
-        description="What's new about each version of Koodo Reader"
+        title={t("Changelog")}
+        description={t("What's new about each version of Koodo Reader")}
       />
       <Header />
       <div className="container bg-dynamic mb-4">

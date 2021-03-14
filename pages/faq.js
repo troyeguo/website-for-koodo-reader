@@ -38,8 +38,8 @@ const FAQ = ({ t }) => {
   return (
     <div>
       <NextSeo
-        title="FAQ"
-        description="commonly asked questions about Koodo Reader"
+        title={t("FAQ")}
+        description={t("commonly asked questions about Koodo Reader")}
       />
       <Header />
       <section className="bg-dynamic pb-5">

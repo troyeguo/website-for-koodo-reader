@@ -23,8 +23,8 @@ const Homepage = ({ t }) => {
   return (
     <React.Fragment>
       <NextSeo
-        title="Download"
-        description="Download option for Koodo Reader"
+        title={t("Download")}
+        description={t("Download option for Koodo Reader")}
       />
       <Header />
       <div className="container">

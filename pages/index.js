@@ -11,8 +11,10 @@ import Cover from "../components/cover";
 const Homepage = ({ t }) => (
   <React.Fragment>
     <NextSeo
-      title="Koodo Reader"
-      description="A modern eBook reader for epub, pdf, mobi, azw3 and txt, supporting Windows, macOS, Linux and Web"
+      title={t("Koodo Reader")}
+      description={t(
+        "A modern eBook reader for epub, pdf, mobi, azw3 and txt, supporting Windows, macOS, Linux and Web"
+      )}
     />
     <Cover />
     <Header />
