@@ -22,7 +22,7 @@ const DownloadDemo = ({ t }) => {
     return downloadOptions.map((item) => {
       return (
         <div
-          className="col-md-6 col-lg-3 mb-4 mb-md-5 aos-init row my-lg-5ml-1"
+          className="col-md-6 col-lg-3 mb-2 mb-md-3 aos-init row my-lg-5ml-1"
           data-aos="fade-up"
           data-aos-delay={50 + item.id * 50}
           key={item.id}
