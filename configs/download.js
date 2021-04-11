@@ -18,14 +18,14 @@ const downloadOptions = [
   {
     id: 3,
     icon: "windows",
-    title: "ZIP",
+    title: "Zip",
     option: "zip",
     url: `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}-Win.zip`,
   },
   {
     id: 4,
     icon: "windows",
-    title: "7Z",
+    title: "7z",
     option: "7z",
     url: `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}-Win.7z`,
   },
