@@ -101,6 +101,7 @@ const DownloadDemo = ({ t }) => {
         .lanzou-download-container {
           text-align: center;
           margin-top: 20px;
+          margin-bottom: 20px;
         }
         .download-item {
           transition: 0.2s;
