@@ -1,5 +1,33 @@
 const changeLogs = [
   {
+    date: "2021.4.11",
+    version: "1.2.4",
+    new: [
+      "Now you can save the customized background colors and text colors",
+      "Add sync button to the header, auto sync no longer suppported",
+      "Add zip and 7z installer for Windows, add arm64 installer for macOS, add snap, deb and rpm installer for Linux",
+      "Now you can batch import mobi,azw3 and txt files",
+      "View mode auto changes from double to single when window size is smaller than 780px",
+      "Add text align option",
+      "Add close button to popup menu",
+      "Main window will be hidden when reading",
+      "Add file icons to epub, mobi, azw3, pdf and txt",
+      "Popup menu now supports searching in the book, searching on the internet and reading the text ",
+      "Uploading backup file to dropbox and webdav is faster now",
+      "Double click on file to open it with Koodo Reader now works on macOS",
+      "Uninstalling Koodo Reader will permanently delete all its data",
+      "Optimization for chapter analysis algorithm",
+      "Optimization for UI",
+    ],
+    fix: [
+      "Fix the position issue for popup menu",
+      "Fix the rendering issue for some pdf files",
+      "Fix the fullscreen bug when remembering window size is on",
+      "Fix the issue with large size pdf files",
+      "Remembering window size now works on pdf",
+    ],
+  },
+  {
     date: "2021.3.14",
     version: "1.2.3",
     new: [

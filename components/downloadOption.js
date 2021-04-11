@@ -50,7 +50,7 @@ const DownloadDemo = ({ t }) => {
                 className="download-button row justify-content-center align-items-center col-9 m-4"
                 style={{ width: "64px !important" }}
               >
-                {t("Download")}
+                {item.option}
               </div>
             </a>
           </div>

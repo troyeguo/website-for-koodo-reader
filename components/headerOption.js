@@ -10,15 +10,14 @@ const HeaderOption = ({ t, router, theme }) => {
       i18n.changeLanguage(localStorage.getItem("lng"));
       return;
     }
-    if (navigator.language === "zh-CN" || navigator.language === "zh-SG") {
-      i18n.changeLanguage("cn");
-      localStorage.setItem("lng", "cn");
-    } else if (
+    if (
+      navigator.language === "zh-CN" ||
+      navigator.language === "zh-SG" ||
       navigator.language === "zh-TW" ||
       navigator.language === "zh-HK"
     ) {
-      i18n.changeLanguage("tw");
-      localStorage.setItem("lng", "tw");
+      i18n.changeLanguage("cn");
+      localStorage.setItem("lng", "cn");
     } else {
       i18n.changeLanguage("en");
       localStorage.setItem("lng", "en");
