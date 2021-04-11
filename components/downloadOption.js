@@ -60,7 +60,6 @@ const DownloadDemo = ({ t }) => {
   };
   return (
     <div className="container">
-      <div className="row justify-content-around">{renderDownload()}</div>
       <div className="lanzou-download-option">
         <div className="lanzou-download-title">
           {t("Download option for Chinese users")}
@@ -83,6 +82,7 @@ const DownloadDemo = ({ t }) => {
         </div>
       </div>
 
+      <div className="row justify-content-around">{renderDownload()}</div>
       <style global jsx>{`
         .download-icon {
           font-size: calc(1rem + 4vw);
