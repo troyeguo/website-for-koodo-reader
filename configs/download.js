@@ -62,14 +62,14 @@ const downloadOptions = [
     icon: "debian",
     title: "Debian",
     option: "deb",
-    url: `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}.deb`,
+    url: `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo.Reader-${version}.deb`,
   },
   {
     id: 10,
     icon: "redhat",
     title: "Redhat",
     option: "rpm",
-    url: `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}.rpm`,
+    url: `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo.Reader-${version}.rpm`,
   },
   {
     id: 11,
