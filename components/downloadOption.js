@@ -22,7 +22,7 @@ const DownloadDemo = ({ t }) => {
     return downloadOptions.map((item) => {
       return (
         <div
-          className="col-md-6 col-lg-3 mb-2 mb-md-3 aos-init row my-lg-5ml-1"
+          className="col-md-6 col-lg-4 mb-2 mb-md-3 aos-init row my-lg-5ml-1"
           data-aos="fade-up"
           data-aos-delay={50 + item.id * 50}
           key={item.id}
@@ -35,24 +35,16 @@ const DownloadDemo = ({ t }) => {
               <use href={`#icon-${item.icon}`}></use>
             </svg>
             <h1 className="download-title col-12 my-2">{t(item.title)}</h1>
-            <a
-              onClick={() => {
-                handleClick(item.url);
-              }}
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <div
-                className="download-button row justify-content-center align-items-center col-9 m-4"
-                style={{ width: "64px !important" }}
+            {item.option.map((subitem, index) => (
+              <a
+                onClick={() => {
+                  handleClick(item.url[index]);
+                }}
+                className="download-link"
               >
-                {item.option}
-              </div>
-            </a>
+                {subitem}
+              </a>
+            ))}
           </div>
         </div>
       );
@@ -98,6 +90,16 @@ const DownloadDemo = ({ t }) => {
           opacity: 1;
           text-align: center;
         }
+        .download-link {
+          display: block;
+          line-height: 30px;
+          font-size: 17px;
+          color: #4299e1;
+          cursor: pointer;
+        }
+        .download-link:hover {
+          text-decoration: underline;
+        }
         .lanzou-download-container {
           text-align: center;
           margin-top: 20px;
@@ -106,10 +108,6 @@ const DownloadDemo = ({ t }) => {
         .download-item {
           transition: 0.2s;
           text-align: center;
-        }
-        .download-item:hover {
-          box-shadow: 0 0 15px rgba(75, 75, 75, 0.2);
-          border-radius: 10px;
         }
         .lanzou-download-title {
           text-align: center;
