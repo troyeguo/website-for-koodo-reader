@@ -1,5 +1,30 @@
 const changeLogs = [
   {
+    date: "2021.4.18",
+    version: "1.2.5",
+    new: [
+      "Add dark mode and theme color",
+      "Now you can adjust paragraph spacing",
+      "Add support to text underline, text shadow and italic text",
+      "Search engine add Yandex and Yahoo",
+      "Now you can disable update notification in the Setting",
+      "First pages are no longer used as cover for pdf files",
+      "You can minimize the main window while reading",
+      "Optimization for chapter analysis algorithm",
+      "Optimization for UI",
+    ],
+    fix: [
+      "Resolve the situation where Koodo can't be operated when you quit reading in some low-configuration computers",
+      "Resolve the situation where screen flickers when opening books",
+      "Resolve the situation where pdf,mobi,azw3,txt files are named as file when you double click to open a book",
+      "Resolve the situation where Koodo is minimized when you double click on a book",
+      "Resolve the situation where Screen is blank when you quit reading in some low-configuration computers",
+      "Resolve the situation where window size can't be save when you quit reading",
+      "Resolve the situation where add-to-shelf dialog not showing",
+      "Resolve the situation where popup menu exceed window edge",
+    ],
+  },
+  {
     date: "2021.4.11",
     version: "1.2.4",
     new: [
