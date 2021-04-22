@@ -14,8 +14,8 @@ const downloadOptions = [
     url: [
       `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}.exe`,
       `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}-Portable.exe`,
-      `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}.zip`,
-      `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}.7z`,
+      `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}-Win.zip`,
+      `https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo-Reader-${version}-Win.7z`,
     ],
   },
   {
