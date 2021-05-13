@@ -63,7 +63,7 @@ const DownloadDemo = ({ t }) => {
             rel="noopener noreferrer"
           >
             <span className="lanzou-download-option">
-              https://wwa.lanzous.com/b0c90cieb
+              https://wwa.lanzoui.com/b0c90cieb
             </span>
           </a>
 
