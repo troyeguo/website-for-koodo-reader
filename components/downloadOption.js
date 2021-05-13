@@ -58,7 +58,7 @@ const DownloadDemo = ({ t }) => {
         </div>
         <div className="lanzou-download-container">
           <a
-            href="https://wwa.lanzous.com/b0c90cieb"
+            href="https://wwa.lanzoui.com/b0c90cieb"
             target="_blank"
             rel="noopener noreferrer"
           >
