@@ -16,6 +16,7 @@ const changeLogs = [
       "Fix the bug with webdav",
       "Fix the bug causing book disappear when resizing window",
       "Fix the bug casuing that book can't be imported when libray is empty",
+      "Fix the bug causing window to be closed after changing reader option",
     ],
   },
   {
