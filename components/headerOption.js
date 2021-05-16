@@ -26,14 +26,6 @@ const HeaderOption = ({ t, router, theme }) => {
   return (
     <div>
       <div className="row ">
-        <li className="col-lg-auto mt-2 faq">
-          <Link href="/faq">
-            <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>
-              {t("FAQ")}
-            </a>
-          </Link>
-          <div className="header-underline1"></div>
-        </li>
         <li className="col-lg-auto mt-2 log">
           <Link href="/log">
             <a className={theme === "dark" && routeName === "/" ? "froze" : ""}>

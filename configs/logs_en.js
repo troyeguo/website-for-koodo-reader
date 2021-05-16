@@ -1,5 +1,24 @@
 const changeLogs = [
   {
+    date: "2021.5.16",
+    version: "1.2.6",
+    new: [
+      "Add support for Djvu and Markdown format",
+      "Now you can read mobi、azw3 and txt on web version, primatively supported",
+      "Sync function is now production-ready, add sync guide for starters",
+      "When mobi and azw3 files contain too many images, Koodo won't convert them into epub format any more",
+      "Now books will automatically be opened in the same window size as last time, you can turn on Auto open book in fullscreen in the Setting",
+      "Now you can set font for Koodo globally",
+      "Splash screen follows dark mode",
+      "Optimization for UI",
+    ],
+    fix: [
+      "Fix the bug with webdav",
+      "Fix the bug causing book disappear when resizing window",
+      "Fix the bug casuing that book can't be imported when libray is empty",
+    ],
+  },
+  {
     date: "2021.4.18",
     version: "1.2.5",
     new: [

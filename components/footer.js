@@ -27,11 +27,6 @@ const Footer = ({ t }) => (
       <div>
         <a className="link-id">{t("Product")}</a>
       </div>
-      <Link href="/faq">
-        <div>
-          <a className="link">{t("FAQ")}</a>
-        </div>
-      </Link>
       <Link href="/log">
         <div>
           <a className="link">{t("Changelog")}</a>
