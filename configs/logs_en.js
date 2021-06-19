@@ -1,5 +1,30 @@
 const changeLogs = [
   {
+    date: "2021.6.19",
+    version: "1.2.7",
+    new: [
+      "Add format support to docx, rtf, cbz, cbr, cbt, fb2, html and xml",
+      "Now you can see a drastic increase on launch speed",
+      "Opening pdf file on desktop is now 2 time faster",
+      "Now you can adjust screen brightness and color inversion in reading option",
+      "Add file size to book info",
+      "Now you can close main window while reading",
+      "Adjust background color and text color based on currently displaying colors",
+      "No double quotes on font list",
+      "Windows size of PDF reader will be remembered",
+      "UI optimazition",
+    ],
+    fix: [
+      "Fix the bug causing books to disappear in some scenerios",
+      "Fix sync bug",
+      "Can't resize window or enter fullscreen on Linux version",
+      "Translation popup exceeds window edge",
+      "Translation failed when the selected text crosses paragraphs",
+      "Fix the search bug",
+      "Fix the fullscreen bug",
+    ],
+  },
+  {
     date: "2021.5.16",
     version: "1.2.6",
     new: [

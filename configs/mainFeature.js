@@ -5,7 +5,7 @@ export const mainFeature = [
     width: 420,
     mWidth: 260,
     subtitle:
-      "Koodo Reader can help you read epub, pdf, mobi, azw3, and txt files",
+      "Koodo Reader can help you read epub, pdf, mobi, azw3, txt, md, djvu, docx, rtf, cbz, cbr, cbt, fb2, html and xml files",
     icons: ["epub", "pdf", "mobi", "txt"],
   },
   {

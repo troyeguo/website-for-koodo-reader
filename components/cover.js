@@ -17,7 +17,7 @@ const Cover = ({ t }) => (
               </p>
               <h1 className="subtitle text-center">
                 {t(
-                  "Koodo Reader is an open-source eBook reader for epub, pdf, mobi, azw3 and txt"
+                  "Koodo Reader is a full-featured ebook manager to help you better study and digest your books"
                 )}
               </h1>
               <div className="container cover-button">
